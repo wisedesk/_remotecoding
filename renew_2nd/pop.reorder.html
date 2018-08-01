@@ -1,0 +1,192 @@
+<div class="pop-reorder">
+	<section class="s1">
+		<div class="inner-wrap">
+			<h2 class="pop-tit">재주문하기</h2>
+			<div class="col-wrap">
+				<div class="col-left">
+					<div class="middle">
+						<p class="ver">ver. 49565_1</p>
+						<div class="img-wrap" style="background-image:url(../_img/s/s_prd.png)"></div>
+						<a href="javascript:void(0)" class="btn btn-zoom" data-src="../_img/s/s_prd.png"><span class="txt">확대보기</span></a>
+					</div>
+				</div>
+
+				<div class="col-right">
+					<table class="tbl-info">
+						<colgroup>
+							<col style="width:80px;" />
+							<col />
+						</colgroup>
+						<tbody>
+						<tr>
+							<th>지점</th>
+							<td>
+								<strong class="t1">양재시민의숲역점</strong>
+								<a href="" class="btn">주문지점변경</a>
+							</td>
+						</tr>
+						<tr>
+							<th>품목</th>
+							<td>
+								<strong class="t2">명함 <small class="name">(윤상묵 원장)</small></strong>
+							</td>
+						</tr>
+						<tr>
+							<td colspan="2">
+								<dl class="detail">
+									<dt>사이즈</dt>
+									<dd>
+										명함기본 : 90*50mm
+										<a href="" class="btn">사양변경</a>
+									</dd>
+								</dl>
+								<dl class="detail">
+									<dt>재질</dt>
+									<dd>누브</dd>
+								</dl>
+								<dl class="detail">
+									<dt>면수</dt>
+									<dd>양면(2p)</dd>
+								</dl>
+								<dl class="detail">
+									<dt>후가공</dt>
+									<dd>양면무광코팅, 사방귀돌이, 단면유광금박, 플라스틱 케이스</dd>
+								</dl>
+								<dl class="detail">
+									<dt>수량</dt>
+									<dd>
+										<label class="label-cnt">
+											<input type="text" class="no"/>
+											<a href="javascript:void(0)" class="btn-cnt up" data-value="up"><span class="a11y">+</span></a>
+											<a href="javascript:void(0)" class="btn-cnt down" data-value="down"><span class="a11y">-</span></a>
+										</label>
+										<span class="bar">장</span>
+										<span class="amount"><strong>8,800</strong>원</span>
+									</dd>
+								</dl>
+							</td>
+						</tr>
+						<tr>
+							<td colspan="2">
+								<dl class="detail">
+									<dt>배송주소</dt>
+									<dd>
+										<p class="add">
+											서울시 마포구 동교동 185-10<br />
+											대산빌딩 305호 리안헤어
+										</p>
+										<a href="" class="btn">배송정보변경</a>
+									</dd>
+								</dl>
+								<dl class="detail">
+									<dt>수취인</dt>
+									<dd>홍길동</dd>
+								</dl>
+								<dl class="detail">
+									<dt>연락처</dt>
+									<dd>010-1235-5555 / 02-5644-5555</dd>
+								</dl>
+								<dl class="detail">
+									<dt>배송방법</dt>
+									<dd>로젠택배</dd>
+								</dl>
+								<dl class="detail">
+									<dt>배송비결제</dt>
+									<dd>
+										후불정산
+										<small class="delivery">배송비예정금액 : 3,300원</small>
+									</dd>
+								</dl>
+							</td>
+						</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<p class="notice">
+				※ 배송비는 배송방법,  부피, 무게에 따라 달라질 수 있으며<br />
+				주문 후 별도 청구 될 수 있습니다
+			</p>
+            <div class="zoom-container"><!-- append --></div>
+			<div class="form-wrap">
+				<label>
+					<p class="tit">추가요청사항</p>
+					<textarea placeholder="재주문하면서 필요한 요청사항 있을 경우 남겨주세요."></textarea>
+				</label>
+			</div>
+		</div>
+	</section>
+
+	<section class="s2">
+		<p>위의 사양으로 재주문하시겠습니까?</p>
+		<div class="btn-wrap">
+			<a href="javascript:void(0)" class="btn b1">장바구니담기</a>
+			<a href="javascript:void(0)" class="btn b2">바로 재주문하기</a>
+			<a href="javascript:void(0)" class="btn b3" data-action="popClose">취소하기</a>
+		</div>
+	</section>
+	<a href="javascript:void(0);" class="pop-close"></a>
+</div>
+
+<script>
+	$(function(){
+        // 수량 카운트
+	    var cnt = function(){
+            var valueChange = function(type){
+                var val = $(".label-cnt .no").val() ;
+                val = val ? val : 0;
+
+                if(type == "up") {
+                    val = parseInt(val) + 1;
+				} else {
+                    val -= 1;
+                    val = val < 0 ? 0 : val;
+				}
+                $(".label-cnt .no").val(val)
+
+            }
+
+            var cntBind = function(){
+                $(".label-cnt .btn-cnt").unbind("click").on("click", function(){
+                    var type = $(this).attr("data-value");
+                    valueChange(type);
+				})
+			}
+            cntBind();
+        }
+
+        // 확대 보기
+        var viewZoom = {
+	        open : function(src){
+	            var html = '<div class="zoom-wrap"><div class="img-wrap" style="background-image:url('+ src +');"></div></div>'
+	            $(".zoom-container").html(html).show();
+			}
+		}
+
+        var bind = function(){
+            // 팝업닫기 클릭
+	        $(".pop-close").unbind("click").on("click", function(){
+                Layer.close();
+                $(".layer").remove();
+			})
+
+            // 확대보기 클릭
+			$(".btn-zoom").unbind("click").on("click", function(){
+                var src = $(this).attr("data-src");
+                viewZoom.open(src);
+            })
+
+            // 확대이미지 딤 클릭
+            /*$(".dim").unbind("click").on("click", function(){
+                viewZoom.close();
+            })*/
+		}
+
+        var init = function(){
+            bind();
+            cnt();
+		}
+
+        init();
+	})
+</script>

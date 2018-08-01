@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<?php include_once("_inc/head.m.html"); ?>
+</head>
+<body style="background:#f8f8f8">
+
+<div id="wrap" class="page-editor-m page-list page-payment">
+	<?php include_once("_inc/header.m.html"); ?>
+
+	<!---------- container------------->
+	<div id="container">
+		<div id="content">
+			<div class="tab-container">
+
+				<section class="tab-pane t1">
+					<dl class="dl-tbl d1">
+						<dt>결제하기</dt>
+						<dd>
+							<ul class="list">
+								<li class="non-pd">
+									<table class="prd">
+										<colgroup>
+											<col style="width:100px;"/>
+											<col />
+										</colgroup>
+										<thead>
+										<tr>
+											<th colspan="2">
+												<strong class="tit">결제내역</strong>
+											</th>
+										</tr>
+										</thead>
+										<tbody>
+										<tr>
+											<th>주문번호</th>
+											<td>43289, 43290</td>
+										</tr>
+										<tr>
+											<th>주문자정보</th>
+											<td>사틴헤어(개롱점) / 홍길동</td>
+										</tr>
+										<tr>
+											<th>품목명</th>
+											<td>명함외 1건</td>
+										</tr>
+										<tr>
+											<th>배송방법</th>
+											<td>로젠택배(선불)</td>
+										</tr>
+										<tr>
+											<th>결제코멘트</th>
+											<td>
+												명함200장, 포스터10장으로 제작해주시구요.
+												결제청구합니다
+											</td>
+										</tr>
+										<tr>
+											<th>주문번호</th>
+											<td>43289, 43290</td>
+										</tr>
+										<tr>
+											<td colspan="2">
+												<div class="total-cotainer">
+													<div class="total-wrap t1">
+														<dl class="total-dl">
+															<dt>총 상품금액</dt>
+															<dd><span class="amount">100,000 <small>원</small></span></dd>
+														</dl>
+														<dl class="total-dl">
+															<dt>총 상품금액</dt>
+															<dd>
+																<span class="delivery">(로젠택배 / 선불결제)</span>
+																<span class="amount">100,000 <small>원</small></span></dd>
+															</dd>
+														</dl>
+													</div>
+													<div class="total-wrap t2">
+														<p class="tip">※ 배송비는 무게와 포장수량에  따라 추가 청구될 수있습니다</p>
+														<dl class="total-dl">
+															<dt>총 결제금액</dt>
+															<dd><span class="amount">103,000 <small>원</small></span></dd>
+														</dl>
+													</div>
+												</div>
+											</td>
+										</tr>
+										<tr class="tr3">
+											<td colspan="2">
+												<!-- 와이저 addClass "_active" -->
+												<a href="" class="wiser"><span class="txt">와이저문의하기 <em class="cnt">[0]</em></span></a>
+											</td>
+										</tr>
+										</tbody>
+									</table>
+								</li>
+
+								<li>
+									<div class="header">
+										<strong class="tit">결제방법</strong>
+									</div>
+									<div class="label-container">
+										<label class="radio-label">
+											<input type="radio" /><span class="txt">신용카드</span>
+										</label>
+										<label class="radio-label">
+											<input type="radio" /><span class="txt">카카오페이</span>
+										</label>
+										<label class="radio-label">
+											<input type="radio" /><span class="txt">실시간계좌이체</span>
+										</label>
+									</div>
+
+									<div class="option-container">
+										<dl>
+											<dt><strong class="label">카드종류</strong></dt>
+											<dd>
+												<div class="drop-box">
+													<a href="javascript:void(0);" class="drop-btn" data-action="click">선택해주세요</a>
+													<input type="hidden" value="" />
+													<div class="drop-wrap">
+														<!-- Todo data-value이 select option value  값임 -->
+														<a href="javascript:void(0);" class="item" data-action="value" data-value="카드1">카드1</a>
+														<a href="javascript:void(0);" class="item" data-action="value" data-value="카드2">카드2</a>
+														<a href="javascript:void(0);" class="item" data-action="value" data-value="카드2">카드2</a>
+													</div>
+												</div>
+											</dd>
+										</dl>
+										<dl>
+											<dt><strong class="label">할부개월</strong></dt>
+											<dd>
+												<div class="drop-box">
+													<a href="javascript:void(0);" class="drop-btn" data-action="click">선택해주세요</a>
+													<input type="hidden" value="" data-type="value" />
+													<div class="drop-wrap">
+														<!-- Todo data-value이 select option value  값임 -->
+														<a href="javascript:void(0);" class="item" data-action="value" data-value="0">일시불</a>
+														<a href="javascript:void(0);" class="item" data-action="value" data-value="1">1개월</a>
+														<a href="javascript:void(0);" class="item" data-action="value" data-value="2">2</a>
+														<a href="javascript:void(0);" class="item" data-action="value" data-value="3">3</a>
+													</div>
+												</div>
+											</dd>
+										</dl>
+									</div>
+
+									<div class="option-container ">
+										<dl>
+											<dt><strong class="label">입금은행</strong></dt>
+											<dd>
+												<div class="drop-box">
+													<a href="javascript:void(0);" class="drop-btn" data-action="click">은행을 선택해 주세요</a>
+													<input type="hidden" value="" data-type="value" />
+													<div class="drop-wrap">
+														<!-- Todo data-value이 select option value  값임 -->
+														<a href="javascript:void(0);" class="item" data-action="value" data-value="카드1">카드1</a>
+														<a href="javascript:void(0);" class="item" data-action="value" data-value="카드2">카드2</a>
+														<a href="javascript:void(0);" class="item" data-action="value" data-value="카드2">카드2</a>
+													</div>
+												</div>
+											</dd>
+										</dl>
+										<dl>
+											<dt><strong class="label">입금기한</strong></dt>
+											<dd>
+												<p class="date">2018년 07월 16일 23:29 까지</p>
+											</dd>
+										</dl>
+										<dl>
+											<dt><strong class="label">현금영수증</strong></dt>
+											<dd>
+												<label class="radio-label">
+													<input type="radio" /><span class="txt">개인소득공제용</span>
+												</label>
+												<label class="radio-label">
+													<input type="radio" /><span class="txt">사업자증빙용</span>
+												</label>
+												<label class="radio-label">
+													<input type="radio" /><span class="txt">신청안함</span>
+												</label>
+											</dd>
+										</dl>
+										<dl>
+											<dt></dt>
+											<dd>
+												<div class="drop-box">
+													<a href="javascript:void(0);" class="drop-btn" data-action="click">통신사</a>
+													<input type="hidden" value="" data-type="value" />
+													<div class="drop-wrap">
+														<!-- Todo data-value이 select option value  값임 -->
+														<a href="javascript:void(0);" class="item" data-action="value" data-value="1">1</a>
+														<a href="javascript:void(0);" class="item" data-action="value" data-value="2">2</a>
+														<a href="javascript:void(0);" class="item" data-action="value" data-value="3">3</a>
+													</div>
+												</div>
+											</dd>
+										</dl>
+										<dl>
+											<dt></dt>
+											<dd class="tel after">
+												<div class="drop-box">
+													<a href="javascript:void(0);" class="drop-btn" data-action="click">010</a>
+													<input type="hidden" value="" data-type="value" />
+													<div class="drop-wrap">
+														<!-- Todo data-value이 select option value  값임 -->
+														<a href="javascript:void(0);" class="item" data-action="value" data-value="010">010</a>
+														<a href="javascript:void(0);" class="item" data-action="value" data-value="011">011</a>
+														<a href="javascript:void(0);" class="item" data-action="value" data-value="016">016</a>
+														<a href="javascript:void(0);" class="item" data-action="value" data-value="017">017</a>
+														<a href="javascript:void(0);" class="item" data-action="value" data-value="018">018</a>
+														<a href="javascript:void(0);" class="item" data-action="value" data-value="019">019</a>
+													</div>
+												</div>
+												<span class="bar">-</span>
+												<input type="text" maxlength="4"/>
+												<span class="bar">-</span>
+												<input type="text" maxlength="4"/>
+											</dd>
+										</dl>
+									</div>
+								</li>
+
+								<li>
+									<div class="term-container">
+										<div class="term-pannel">
+											<table class="prd tbl-term">
+											<colgroup>
+												<col />
+											</colgroup>
+											<thead>
+											<tr>
+												<th>
+													<label class="chk-label">
+														<input type="checkbox" /><span class="txt">개인정보 제3자 제공 동의 및 주의사항</span>
+													</label>
+												</th>
+											</tr>
+											</thead>
+											<tbody>
+											<tr>
+												<td>
+													<div class="drop-box">
+														<span class="label">개인정보 제3자 제공</span>
+														<a href="javascript:void(0);" class="drop-btn" data-action="click"><span class="txt">펼쳐보기</span></a>
+														<div class="drop-wrap">
+															<div class="term-wrap t1"><!-- load --></div>
+														</div>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<div class="drop-box">
+														<span class="label">주의사항</span>
+														<a href="javascript:void(0);" class="drop-btn" data-action="click"><span class="txt">펼쳐보기</span></a>
+														<div class="drop-wrap">
+															<div class="term-wrap t2"><!-- load --></div>
+														</div>
+													</div>
+												</td>
+											</tr>
+											</tbody>
+										</table>
+										</div>
+
+										<div class="term-pannel">
+											<table class="prd tbl-term">
+												<colgroup>
+													<col />
+												</colgroup>
+												<thead>
+												<tr>
+													<th>
+														<label class="chk-label">
+															<input type="checkbox" /><span class="txt">개인정보 제3자 제공 동의 및 주의사항</span>
+														</label>
+													</th>
+												</tr>
+												</thead>
+												<tbody>
+												<tr>
+													<td>
+														<div class="drop-box">
+															<span class="label">전자금융거래 기본약관</span>
+															<a href="javascript:void(0);" class="drop-btn" data-action="click"><span class="txt">펼쳐보기</span></a>
+															<div class="drop-wrap">
+																<div class="term-wrap t3"><!-- load --></div>
+															</div>
+														</div>
+													</td>
+												</tr>
+												<tr>
+													<td>
+														<div class="drop-box">
+															<span class="label">개인정보 수집 및 이용동의</span>
+															<a href="javascript:void(0);" class="drop-btn" data-action="click"><span class="txt">펼쳐보기</span></a>
+															<div class="drop-wrap">
+																<div class="term-wrap t4"><!-- load --></div>
+															</div>
+														</div>
+													</td>
+												</tr>
+												<tr>
+													<td>
+														<div class="drop-box">
+															<span class="label">개인정보 제공 및 위탁 동의</span>
+															<a href="javascript:void(0);" class="drop-btn" data-action="click"><span class="txt">펼쳐보기</span></a>
+															<div class="drop-wrap">
+																<div class="term-wrap t5"><!-- load --></div>
+															</div>
+														</div>
+													</td>
+												</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+								</li>
+
+								<li>
+									<div class="privacy-container option-container">
+										<div class="header">
+											<strong class="tit">결제자 정보</strong>
+											<small class="tip">※ 결제자 정보가 다를 경우 수정 해주세요</small>
+										</div>
+										<dl>
+											<dt><strong class="label">결제자</strong></dt>
+											<dd>
+												<input type="text" />
+											</dd>
+										</dl>
+										<dl>
+											<dt><strong class="label">연락처</strong></dt>
+											<dd>
+												<input type="text" />
+											</dd>
+										</dl>
+										<dl>
+											<dt><strong class="label">결제관리번호</strong></dt>
+											<dd>
+												<input type="text" />
+											</dd>
+										</dl>
+										<dl>
+											<dt><strong class="label">남기실 말</strong></dt>
+											<dd>
+												<input type="text" />
+											</dd>
+										</dl>
+									</div>
+								</li>
+							</ul>
+
+							<a href="" class="btn-payment">결제하기</a>
+						</dd>
+					</dl>
+				</section>
+
+			</div>
+		</div>
+	</div><!--container-->
+</div>
+<script>
+    $(function(){
+		pageStart();
+	})
+
+	var pageStart = function(){
+
+    	/*약관 load*/
+    	var termLoad = function(){
+			$(".term-wrap.t1").load("term.html");
+			$(".term-wrap.t2").load("term.html");
+			$(".term-wrap.t3").load("term.html");
+			$(".term-wrap.t4").load("term.html");
+			$(".term-wrap.t5").load("term.html");
+	    }
+
+	    var init = function(){
+			termLoad()
+	    }
+		init();
+	}
+</script>
+</body>
+</html>
+
