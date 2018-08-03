@@ -77,9 +77,11 @@ textarea {display:block; border:1px solid #ccc; border-radius:6px; background:#f
 
 /*20180723 update*/
 .menu-wrap .menu-nav .nav-list > li:nth-child(1):before {background-image:url(../../_img/editor/ico_nav2.png) }
-.menu-wrap .menu-nav .nav-list > li:nth-child(2):before {background-image:url(../../_img/editor/ico_nav1.png) }
-.menu-wrap .menu-nav .nav-list > li:nth-child(3):before {background-image:url(../../_img/editor/ico_nav3_1.png) }
-.menu-wrap .menu-nav .nav-list > li:nth-child(4):before {background-image:url(../../_img/editor/ico_nav3.png) }
+.menu-wrap .menu-nav .nav-list > li:nth-child(2):before {background-image:url(../../_img/editor/ico_pay.png) }
+.menu-wrap .menu-nav .nav-list > li:nth-child(3):before {background-image:url(../../_img/editor/ico_sian.png) }
+.menu-wrap .menu-nav .nav-list > li:nth-child(4):before {background-image:url(../../_img/editor/ico_nav1.png) }
+.menu-wrap .menu-nav .nav-list > li:nth-child(5):before {background-image:url(../../_img/editor/ico_desk.png) }
+.menu-wrap .menu-nav .nav-list > li:nth-child(6):before {background-image:url(../../_img/editor/ico_nav3.png) }
 .menu-wrap .menu-nav .nav-list > li .item {font-size:19px; color:#000; line-height:55px; height:55px;}
 .menu-wrap .menu-nav .nav-list > li .item .cnt {color:red}
 
