@@ -12,21 +12,21 @@
 .page-payment-list .list > li .prd td  {border-bottom:1px solid #ededed;}
 .page-payment-list .list > li .info-dl {display:block; width:100%; position:relative; padding-left:60px;}
 .page-payment-list .list > li .info-dl dt,
-.page-payment-list .list > li .info-dl dd {padding:3px 0; }
-.page-payment-list .list > li .info-dl dt {width:60px; text-align: right; position:absolute; top:0; left:0; font-size:12px;}
-.page-payment-list .list > li .info-dl dd {display:block ;width:100%; color:#797878;padding-left:10px;position:relative}
+.page-payment-list .list > li .info-dl dd {padding:0px 0; }
+.page-payment-list .list > li .info-dl dt {width:60px; text-align: left; position:absolute; top:0; left:0; font-size:13px;color:#6a6a6a;}
+.page-payment-list .list > li .info-dl dd {display:block ;width:100%; padding-left:10px;position:relative;font-size: 13px;}
 .page-payment-list .list > li .info-dl dd.header {padding-right:70px;}
 .page-payment-list .list > li .info-dl dd .tit {display:inline-block; color:#000; font-size:13px;}
-.page-payment-list .list > li .info-dl dd .status  {display:inline-block; width:55px; text-align: center; line-height:16px; height:16px; font-size:11px; border:1px solid #747474; color:#747474; position:absolute; right:0; top:50%; margin-top:-8px; border-radius: 3px}
+.page-payment-list .list > li .info-dl dd .status  {display:inline-block; width:55px; text-align: center; line-height:16px; height:16px; font-size:11px; border:1px solid #747474; color:#747474; position:absolute; right:0; top:40%; margin-top:-8px; border-radius: 3px}
 .page-payment-list .list > li .info-dl dd .status.s1 {border-color:#fc0b0b; color:#fc0b0b}
 .page-payment-list .list > li .info-dl dd .status.s2 {border-color:#77bde2; color:#77bde2}
-.page-payment-list .list > li .amount-wrap {margin-top:5px;}
+.page-payment-list .list > li .amount-wrap {margin-top:10px;}
 .page-payment-list .list > li .amount-wrap .col-50 {float:left; width:50%; text-align: center}
 .page-payment-list .list > li .amount-wrap .col-50 dl {display:inline-block}
 .page-payment-list .list > li .amount-wrap .col-50 dl dt,
 .page-payment-list .list > li .amount-wrap .col-50 dl dd {display:inline-block; color:#6a6a6a;}
 .page-payment-list .list > li .amount-wrap .col-50 dl dt:after {content:"|"; display:inline-block; margin:0 5px; vertical-align: middle;}
-.page-payment-list .list > li .total-wrap {text-align: right; color:#ff7f00; margin-top:10px;}
+.page-payment-list .list > li .total-wrap {text-align: right; color:#ff7f00; margin-top:0px; padding-right: 20px;}
 .page-payment-list .list > li .total-wrap dl dt,
 .page-payment-list .list > li .total-wrap dl dd {display:inline-block;}
 .page-payment-list .list > li .total-wrap dl dd {font-size:17px; font-weight:700; margin-left:10px;}
@@ -66,7 +66,8 @@
 .page-payment .list > li .prd td {border-right:0; vertical-align: top;}
 .page-payment .list > li .prd thead th {background:#ddd; color:#000 }
 .page-payment .list > li .prd tbody th,
-.page-payment .list > li .prd tbody td {border-bottom:1px solid #e4e4e4; color:#5e5e5e;}
+.page-payment .list > li .prd tbody td {border-bottom:1px solid #e4e4e4; color:#5e5e5e; vertical-align: middle;}
+.page-payment .list > li .prd tbody td {font-size: 14px;}
 .page-payment .total-cotainer {padding:0 5px;}
 .page-payment .total-cotainer .total-wrap {border-bottom:2px solid #ff7f00; padding:5px 0;}
 .page-payment .total-cotainer .total-wrap:last-child {border-bottom:0;}
@@ -79,8 +80,8 @@
 .page-payment .total-cotainer .total-wrap .total-dl dd .amount small {font-size:12px; font-weight:400;}
 .page-payment .total-cotainer .total-wrap .total-dl dd .delivery {float:left;font-size:12px; color:#000;}
 .page-payment .total-cotainer .total-wrap .tip {font-size:11px; text-align: right; margin-bottom:10px;}
-.page-payment .total-cotainer .total-wrap.t2 dt {font-size:16px; color:#ed1c24;}
-.page-payment .total-cotainer .total-wrap.t2 .total-dl dd .amount {font-size:16px; color:#ed1c24;}
+.page-payment .total-cotainer .total-wrap.t2 dt {font-size:18px; color:#ed1c24;}
+.page-payment .total-cotainer .total-wrap.t2 .total-dl dd .amount {font-size:18px; color:#ed1c24;}
 
 .page-payment .list .header {font-size:16px;}
 .page-payment .list .label-container,
@@ -95,7 +96,10 @@
 .page-payment .list .option-container dl dt,
 .page-payment .list .option-container dl dd {font-size:13px; color:#000; padding:3px 0; display:block ;width:100%;}
 .page-payment .list .option-container dl dt {position:absolute; left:0; top:0; width:75px; white-space: nowrap}
+.page-payment .list .option-container dl dd .date {line-height: 33px; }
+
 .page-payment .list .option-container dl dt .label {display:block; line-height:33px;}
+.page-payment .list .option-container dl dd .cash {line-height:33px; margin-bottom: -10px;}
 .page-payment .list .option-container dl dd .radio-label {display:inline-block;padding-left:25px; margin-right:5px;}
 .page-payment .list .option-container dl dd.tel .drop-box,
 .page-payment .list .option-container dl dd.tel .bar,

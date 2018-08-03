@@ -347,7 +347,7 @@ body._showLeft .editor-wrap .dim {content:""; display:block; width:100%; height:
 .page-list .list li .prd .tr2 td .right {color:#000;}
 
 .page-list .list li .prd td .wiser {display:block ;width:100%; text-align: center}
-.page-list .list li .prd td .wiser .txt {display:inline-block; line-height:20px; color:#707070; background:url(../../_img/editor/ico_talk.png) center left no-repeat; background-size:auto 100%; padding-left:25px;}
+.page-list .list li .prd td .wiser .txt {display:inline-block; line-height:20px; color:#707070; background:url(../../_img/editor/ico_talk.png) center left no-repeat; background-size:auto 100%; padding-left:25px;font-size:14px;}
 .page-list .list li .prd td .wiser .txt .cnt._active {color:#168ece}
 
 
