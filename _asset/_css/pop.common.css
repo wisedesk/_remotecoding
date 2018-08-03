@@ -92,21 +92,21 @@ input[type=text] {font-size:12px; font-family:NanumSquare; }
 }
 
 /* 와이즈 불편접수데스크 20180801 update */
-.pop-report {width:100%; max-width:480px;padding:0 15px; background:none;}
+.pop-report {width:100%; max-width:560px;padding:0 15px; background:none;}
 .pop-report .pop-inner {background:#fff;}
 .pop-report header {border-bottom:1px solid #556080;position:relative}
-.pop-report header .pop-tit {display:block; width:100%; color:#556080; padding:0 15px; font-size:24px; font-weight:700; line-height:50px;}
+.pop-report header .pop-tit {display:block; width:100%; color:#556080; padding:0 15px; font-size:22px; font-weight:700; line-height:50px;}
 .pop-report header .btn-pop-close {
     top:50%;
     -webkit-transform: translate(0, -50%);-moz-transform: translate(0, -50%);-ms-transform: translate(0, -50%);-o-transform: translate(0, -50%);transform: translate(0, -50%);
 }
 .pop-report .pop-content {padding-bottom:40px;}
 .pop-report .dec-wrap {border-bottom:1px solid #556080;color:#333;text-align: center; }
-.pop-report .dec-wrap.w1 {padding:20px 10px; font-size:16px; }
-.pop-report .dec-wrap.w1 .tip {display:block; width:100%; text-align: right; font-size:15px; color:#556080; margin-top:18px;}
-.pop-report .dec-wrap.w2 {padding:25px 10px 15px 10px;background:#f9f9f9; font-size:20px;text-align:left; padding-left:50px;}
+.pop-report .dec-wrap.w1 {padding:20px 10px; font-size:18px; }
+.pop-report .dec-wrap.w1 .tip {display:block; width:100%; text-align: right; font-size:15px; color:#556080; margin-top:12px;}
+.pop-report .dec-wrap.w2 {padding:25px 10px 15px 10px;background:#f9f9f9; font-size:16px;text-align:left; padding-left:50px;}
 .pop-report .dec-wrap.w2 .dec {text-align: left; margin:0 auto; display:inline-block; padding-left:47px; position:relative; line-height:1;}
-.pop-report .dec-wrap.w2 .dec small {display:block; font-size:14px; margin-top:10px; line-height:1.2}
+.pop-report .dec-wrap.w2 .dec small {display:block; font-size:13px; margin-top:10px; line-height:1.2}
 .pop-report .dec-wrap.w2.w2-1 .dec {background: url(../../_img/pop_report_ico1.png) top left no-repeat;}
 .pop-report .dec-wrap.w2.w2-2 .dec  {background: url(../../_img/pop_report_ico2.png) top left no-repeat;}
 
