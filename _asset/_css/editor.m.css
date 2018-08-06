@@ -58,14 +58,14 @@ textarea {display:block; border:1px solid #ccc; border-radius:6px; background:#f
 .menu-wrap {position:fixed; left:-80%; width:80%; top:0; bottom:0; background:#fff; z-index:800;}
 .menu-wrap._active {display:block; left:0; box-shadow: 2px 2px 10px rgba(0,0,0,0.4);  -webkit-transition-duration: .3s;-moz-transition-duration: .3s;-ms-transition-duration: .3s;-o-transition-duration: .3s;transition-duration: .3s;}
 .menu-wrap._active .menu-dimm {content:""; display: block; position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0, 0, 0, 0.5); }
-.menu-wrap > .wrap {position: relative; height: 100%; top: 0; bottom: 0; background: #fff;}
+.menu-wrap > .wrap {position: relative; height: 100%; top: 0; bottom: 0; background: #fff; overflow-y:auto}
 .menu-wrap .menu-head {background:url(../../_img/editor/bg_left.jpg) center no-repeat; background-size:cover; width:100%; padding-top:52.63%; position:relative}
 .menu-wrap .menu-head .tit,
 .menu-wrap .menu-head .dec {color:#fff; text-shadow: 2px 2px 2px rgba(0,0,0,0.4); display:block; line-height:1; position:absolute; left:15px;}
 .menu-wrap .menu-head .tit {font-size:24px;bottom:40px;}
 .menu-wrap .menu-head .dec {font-size:13px;bottom:15px;}
 
-.menu-wrap .menu-nav {border-top:1px solid #c6d0d6; padding:0 10px;}
+.menu-wrap .menu-nav {border-top:1px solid #c6d0d6; padding:0 10px; background:#fff; z-indeX:1;position:relative}
 .menu-wrap .menu-nav .nav-list,
 .menu-wrap .menu-nav .nav-list > li,
 .menu-wrap .menu-nav .nav-list > li .item {display:block; width:100%; }
