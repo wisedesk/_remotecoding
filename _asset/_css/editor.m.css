@@ -11,7 +11,7 @@ body {width:100%; font-family:'NanumSquare',Dotum,Helvetica,"Apple SD Gothic Neo
 #content,
 #footer {width:100%;position:relative; }
 
-#wrap {overflow: hidden; padding-top:85px;}
+#wrap {overflow: hidden; padding-top:40px;}
 body._noscroll {overflow: hidden; -webkit-overflow-scrolling:touch; position: fixed;width: 100%;top:0; bottom:0; z-index:400;}
 body._open-menu:before,
 body._write .dimm {content:""; display:none; position:fixed;left:0; right:0; top:0; bottom:0; background:rgba(0,0,0,0.6); z-index:150;}

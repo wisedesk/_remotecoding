@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<!-- 퍼블리싱 임시 include -->
+	<?php include_once("_inc/head.m.html"); ?>
+</head>
+<body>
+	<!-- 퍼블리싱 임시 include -->
+	<?php include_once("_inc/header.m.html"); ?>
+
+<div id="wrap" class="page-editor-m">
+
+    <nav class="fix-nav">
+        <a href="index_m.html" class="nav-item">시안보기</a>
+        <a href="javascript:void(0)" class="nav-item" data-action="anchor" data-sid="1">제작사양</a>
+        <a href="javascript:void(0)" class="nav-item" data-action="anchor" data-sid="2">디자인코멘트</a>
+        <a href="javascript:void(0)" class="nav-item" data-action="anchor" data-sid="3">주문시 요청사항</a>
+    </nav>
+
+	<!---------- container------------->
+	<div id="container">
+		<div id="content">
+			<div class="tab-container">
+
+				<section class="tab-pane t0">
+
+					<div class="editor-wrap">
+						<div class="left-side">
+							<div class="_tab-container">
+								<div class="tab-wrap after">
+									<a href="javascript:void(0);" class="_btn-tab" data-tab-value="0">제본형태 보기</a>
+									<a href="javascript:void(0);" class="_btn-tab" data-tab-value="1">낱장형태 보기</a>
+								</div>
+								<div class="tab-pane t0">
+									<a href="javascript:void(0);" class="_prev btn-arrow"><span class="a11y">이전</span></a>
+									<div class="slide-containter _over-wrap">
+										<ul class="slide-wrap">
+											<li>
+												<a href="javascript:void(0)" class="item" data-src="../_img/editor/s1.jpg">
+													<div class="img-wrap" style="background-image:url(../_img/editor/s1.jpg)"></div>
+													<div class="dec-wrap">페이지1</div>
+												</a>
+											</li>
+											<li>
+												<a href="javascript:void(0)" class="item" data-src="../_img/editor/s2.jpg">
+													<div class="img-wrap" style="background-image:url(../_img/editor/s2.jpg)"></div>
+													<div class="dec-wrap">페이지2</div>
+												</a>
+											</li>
+											<li>
+												<a href="javascript:void(0)" class="item" data-src="../_img/editor/s3.jpg">
+													<div class="img-wrap" style="background-image:url(../_img/editor/s3.jpg)"></div>
+													<div class="dec-wrap">페이지3</div>
+												</a>
+											</li>
+											<li>
+												<a href="javascript:void(0)" class="item" data-src="../_img/editor/s4.jpg">
+													<div class="img-wrap" style="background-image:url(../_img/editor/s4.jpg)"></div>
+													<div class="dec-wrap">페이지4</div>
+												</a>
+											</li>
+										</ul>
+									</div>
+									<a href="javascript:void(0);" class="_next btn-arrow"><span class="a11y">다음</span></a>
+								</div>
+
+								<div class="tab-pane t1">
+									<a href="javascript:void(0);" class="_prev btn-arrow"><span class="a11y">이전</span></a>
+									<div class="slide-containter _over-wrap">
+										<ul class="slide-wrap">
+											<li>
+												<a href="javascript:void(0)" class="item" data-src="../_img/editor/s4.jpg">
+													<div class="img-wrap" style="background-image:url(../_img/editor/s4.jpg)"></div>
+													<div class="dec-wrap">페이지1</div>
+												</a>
+											</li>
+											<li>
+												<a href="javascript:void(0)" class="item" data-src="../_img/editor/s3.jpg">
+													<div class="img-wrap" style="background-image:url(../_img/editor/s3.jpg)"></div>
+													<div class="dec-wrap">페이지2</div>
+												</a>
+											</li>
+											<li>
+												<a href="javascript:void(0)" class="item" data-src="../_img/editor/s2.jpg">
+													<div class="img-wrap" style="background-image:url(../_img/editor/s2.jpg)"></div>
+													<div class="dec-wrap">페이지3</div>
+												</a>
+											</li>
+											<li>
+												<a href="javascript:void(0)" class="item" data-src="../_img/editor/s1.jpg">
+													<div class="img-wrap" style="background-image:url(../_img/editor/s1.jpg)"></div>
+													<div class="dec-wrap">페이지4</div>
+												</a>
+											</li>
+										</ul>
+									</div>
+									<a href="javascript:void(0);" class="_next btn-arrow"><span class="a11y">다음</span></a>
+								</div>
+							</div>
+							<!--<a href="javascript:void(0);" class="_btn-drop"><span class="a11y">open/close</span></a>-->
+						</div><!--// left-side -->
+
+						<div class="top-wrap after">
+							<a href="javascript:void(0)" class="btn btn-view"><span class="txt">page보기</span></a>
+							<a href="" class="btn btn-down">다운로드</a>
+						</div>
+
+						<div id="editor"><!-- append --></div>
+						<div class="dim"></div>
+					</div>
+				</section>
+
+			</div>
+		</div>
+
+		<!-- 퍼블리싱 임시 include -->
+		<?php include_once("_inc/tail.m.html"); ?>
+
+	</div><!--container-->
+</div>
+<script>
+	$(function(){
+        editor();
+	})
+</script>
+</body>
+</html>
+
