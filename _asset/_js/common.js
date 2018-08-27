@@ -150,6 +150,7 @@ WISE.commonFUNCTION = function(){
         })
     }
 
+
     bind();
 }
 
@@ -231,6 +232,34 @@ WISE.ACTION = {
 	},
 }
 
+/******************************
+ * sticky
+ * 20180827 up
+ ******************************/
+WISE.sticky = function() {
+	var start = function() {
+		var headerHeight = $(".header-fix").outerHeight(),
+			headerTop = $(".header-fix").offset().top,
+			stickyTop = $("[data-action=stickyWrap]").offset().top,
+			$sticky = $("[data-action=sticky]");
+
+		if (stickyTop < headerTop + headerHeight) {
+			$sticky.addClass("_fix");
+			$sticky.css({"top": headerHeight + "px"})
+		} else {
+			$sticky.removeClass("_fix");
+			$sticky.css({"top": "0"})
+		}
+	}
+	$(window).scroll(function(){
+		start();
+	})
+	start();
+}
+
+/******************************
+ * function
+ ******************************/
 WISE.commonINIT = function(){
     WISE.commonFUNCTION();
 	WISE.ACTION.dropBox();

@@ -14,6 +14,18 @@ body {width:100%; font-family:'NanumSquare',Dotum,Helvetica,"Apple SD Gothic Neo
 
 .m-main {width:1080px; margin:0 auto; position:relative;}
 body.noscroll {overflow:hidden;}
+
+/*------- common --------------------------------------------------------*/
+.tbl-list {width:100%; border-top:2px solid #556080;}
+.tbl-list th,
+.tbl-list td {border-bottom:1px solid #dedfe0; padding:10px 0; text-align: center; font-size:12px; color:#676767;}
+.tbl-list th {background:#f2f2f3}
+.tbl-list th .label {display:block; width:100%; position:relative; }
+.tbl-list th .label:after {content:""; display:block ;width:1px; height:12px; background:#b4b4be; position:absolute; right:0; top:50%; margin-top:-6px;}
+.tbl-list th:last-child .label:after {display:none;}
+.tbl-list td .ellip {float:left; text-align: left;}
+.tbl-list tr:hover td {background:#d8ebf7}
+
 /*------- header --------------------------------------------------------*/
 #header {padding-top:134px;}
 #header .header-fix {position:fixed;top:0; ;left:0; right:0; z-index:1; background:#fff}
@@ -927,3 +939,25 @@ label input[type=radio] {vertical-align: text-bottom}
 .ship .tbl3 th {background:#f9f8f9; color:#676767; text-align:center; height:40px;}
 .ship .tbl3 td .dec-wrap {text-align:left; padding-left:20px;}
 .ship .tbl3 td .img {max-width:100px;}
+
+.page-order .pop-detail .tab-wrap {position:relative; padding-top:80px;}
+.page-order .tab-wrap .tab {
+    width:1080px; background:#fff; position:absolute; left:50%; top:0; z-index:1;
+    -webkit-transform: translate(-50%, 0);-moz-transform: translate(-50%, 0);-ms-transform: translate(-50%, 0);-o-transform: translate(-50%, 0);transform: translate(-50%, 0);
+}
+.page-order .tab-wrap .tab._fix {position:fixed;}
+
+/* pop-bunch 20180827 up */
+.pop-bunch {width:490px; }
+.pop-bunch .inner-wrap {padding:20px 15px;}
+.pop-bunch .pop-tit {font-size:14px; color:#333; line-height:1; display:block}
+.pop-bunch .tbl-list {margin-top:15px;}
+.pop-bunch .tbl-list td:first-child {text-align: left; padding-left:20px;}
+.pop-bunch .btn-wrap {margin-top:30px; text-align: left;}
+.pop-bunch .btn-wrap .contact {display:inline-block; border:1px solid #556080; border-radius: 3px; overflow: hidden;}
+.pop-bunch .btn-wrap .contact .txt,
+.pop-bunch .btn-wrap .contact .cnt {float:left;display:inline-block; line-height:30px; height:30px; text-align: center; }
+.pop-bunch .btn-wrap .contact .txt {padding:0 10px; color:#556080; font-size:11px;}
+.pop-bunch .btn-wrap .contact .cnt {width:40px; color:#fff;font-size:12px;background:#556080}
+.pop-bunch .btn-wrap .btn-close {float:right;display:inline-block; width:97px; height:32px; line-height:32px; text-align: center; border-radius: 4px; border:1px solid #468ffc; font-size:12px ;color:#468ffc; }
+.pop-bunch .top {line-height:1; font-size:11px; color:#5e5e5e; margin-top:5px; }

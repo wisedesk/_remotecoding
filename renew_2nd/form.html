@@ -231,7 +231,7 @@
 										<ul class="btn-wrap">
 											<li><a href="" class="btn b1">배송정보수정</a></li>
 											<li><a href="" class="btn b2">묶음배송요청</a></li>
-											<li><a href="" class="btn b3">묶음배송적용됨</a></li>
+											<li><a href="javascript:void(0)" class="btn b3" data-actopm="pop-bunch">묶음배송적용됨</a></li>
 										</ul>
 									</td>
 								</tr>
@@ -319,7 +319,7 @@
 										<ul class="btn-wrap">
 											<li><a href="" class="btn b1">배송정보수정</a></li>
 											<li><a href="" class="btn b2">묶음배송요청</a></li>
-											<li><a href="" class="btn b3">분류배송적용</a></li>
+											<li><a href="javascript:void(0)" class="btn b3" data-actopm="pop-bunch">묶음배송적용됨</a></li>
 										</ul>
 									</td>
 								</tr>
@@ -406,8 +406,8 @@
 										</dl>
 										<ul class="btn-wrap">
 											<li><a href="" class="btn b1">배송정보수정</a></li>
-											<li><a href="" class="btn b2">묶음배송요청</a></li>
-											<li><a href="" class="btn b3">분류배송적용</a></li>
+											<li><a href="javascript:void(0)" class="btn b2">묶음배송요청</a></li>
+											<li><a href="javascript:void(0)" class="btn b3" data-actopm="pop-bunch">묶음배송적용됨</a></li>
 										</ul>
 									</td>
 								</tr>
@@ -420,8 +420,6 @@
 					</section>
 				</div>
 			</div>
-
-
 
 			<!-- 20180801 update -->
 			<div style="padding:20px 0">
@@ -480,6 +478,11 @@
 		// 재주문 클릭
 	    $(".btn.reoder").unbind("click").on("click", function(){
             Layer.load('pop.reorder.html', 'pop-reorder');
+		})
+
+	    /* 20180827 up 묶음배송 */
+		$("[data-actopm=pop-bunch]").unbind("click").on("click", function(){
+			Layer.load('pop.bunch.html', 'pop-bunch');
 		})
 	}
 
