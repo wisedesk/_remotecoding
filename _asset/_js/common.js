@@ -1,3 +1,21 @@
+var common = function () {
+	var activeGnb = function(){
+		var __page = $("#__page").val();
+		$(".header2 .quick li").removeClass("active");
+		$(".header2 .quick li.l"+ __page).addClass("active");
+	}
+
+	var bindEvent = function() {
+		$("._datePick").datepicker();
+	}
+
+	var init = function() {
+		bindEvent();
+		activeGnb();
+	}
+	init();
+}
+
 /******** 그룹별 가장높은  height 값으로 resize ***********/
 var boxSize = function () {
     var cols = document.querySelectorAll('[data-col]'),
@@ -261,8 +279,23 @@ WISE.sticky = function() {
  * function
  ******************************/
 WISE.commonINIT = function(){
-    WISE.commonFUNCTION();
+	common();
+	WISE.commonFUNCTION();
 	WISE.ACTION.dropBox();
 	WISE.ACTION.tabControll();
 }
 
+
+/* datepicker */
+$.datepicker.setDefaults({
+	dateFormat: 'yy.mm.dd',
+	prevText: '이전 달',
+	nextText: '다음 달',
+	monthNames: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'],
+	monthNamesShort: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'],
+	dayNames: ['일', '월', '화', '수', '목', '금', '토'],
+	dayNamesShort: ['일', '월', '화', '수', '목', '금', '토'],
+	dayNamesMin: ['일', '월', '화', '수', '목', '금', '토'],
+	showMonthAfterYear: true,
+	yearSuffix: '년'
+});
