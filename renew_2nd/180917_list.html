@@ -1,0 +1,298 @@
+<?php include_once("_inc/head.html"); ?>
+<!---------- container------------->
+<input type="hidden" id="__page" value="6" />
+<div id="container" class="page-sub page-form page-form2 ">
+	<div id="content">
+		<div class="m-main">
+			<div class="form-box">
+				<div class="tab-wrap after">
+					<ul class="tab f_left">
+						<li>
+							<a href="javascript:void(0)" class="_tab sort-tab" data-sid="1"><span>결제 미처리</span></a>
+						</li>
+						<li>
+							<a href="javascript:void(0)" class="_tab sort-tab" data-sid="2"><span>결제완료/취소</span></a>
+						</li>
+					</ul>
+					<p class="tip">* 최근 3개월간 주문한 품목에 대한 집계입니다.</p>
+				</div>
+				<div class="tab-con t1">
+
+					<section class="date-wrap">
+						<div class="tbl-wrap">
+							<div class="m-main">
+								<table class="tbl-date">
+									<colgroup>
+										<col style="width:50px" />
+										<col style="width:330px" />
+										<col style="width:50px" />
+										<col />
+									</colgroup>
+									<tbody>
+									<tr>
+										<th rowspan="2">청구일</th>
+										<td>
+											<input type="text" class="_datePick" /><span class="bar">~</span>
+											<input type="text" class="_datePick" />
+										</td>
+										<th>지점</th>
+										<td>
+											<input type="text" class="in2" />
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<ul class="sel-date after">
+												<li><a href="" class="active">오늘</a></li>
+												<li><a href="">어제</a></li>
+												<li><a href="">1주</a></li>
+												<li><a href="">1개월</a></li>
+												<li><a href="">3개월</a></li>
+												<li><a href="">6개월</a></li>
+											</ul>
+										</td>
+										<th>주문자</th>
+										<td>
+											<input type="text" class="in2" />
+										</td>
+									</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+						<div class="btn-wrap">
+							<a href="" class="btn b1">검색하기</a>
+							<a href="" class="btn b2">검색조건 초기화</a>
+						</div>
+					</section>
+
+					<section class="detail-wrap">
+						<div class="detail-tabcon active">
+							<table class="tbl-detail">
+								<colgroup>
+									<col style="width:120px" />
+									<col />
+									<col style="width:210px" />
+									<col style="width:130px" />
+									<col style="width:250px" />
+								</colgroup>
+								<thead>
+								<tr>
+									<th>청구일</th>
+									<th>품목정보</th>
+									<th>주문자정보</th>
+									<th>배송방법</th>
+									<th>결제정보</th>
+								</tr>
+								</thead>
+								<tbody>
+								<tr>
+									<td class>
+										<a href="" class="btn-wiser">
+											<dl>
+												<dt>와이저문의하기</dt>
+												<dd>00</dd>
+											</dl>
+										</a>
+										<p class="date">2017.05.31(수)</p>
+									</td>
+									<td>
+										<strong class="name">명함, 포스터외 2건</strong>
+										<div class="tag">
+											<a href="" class="item">49131</a>
+											<a href="" class="item">49131</a>
+										</div>
+									</td>
+									<td>
+										<p class="dec">사틴헤어(롯데마트영통점)<br />김사틴</p>
+									</td>
+									<td>
+										<p class="dec">로젠택배<br />(후불정산)</p>
+									</td>
+									<td>
+										<div class="top">
+											<dl class="info">
+												<dt>상품금액</dt>
+												<dd>50,000원</dd>
+											</dl>
+											<dl class="info">
+												<dt>배송비</dt>
+												<dd>50,000원</dd>
+											</dl>
+										</div>
+										<div class="btt">
+											<dl class="amount">
+												<dt>총 결제금액</dt>
+												<dd><strong class="cnt">50,000</strong>원</dd>
+											</dl>
+											<span class="pay btn">완납</span>
+											<span class="pay not btn">미납</span>
+											<span class="pay cancle btn">취소</span>
+										</div>
+									</td>
+								</tr>
+								</tbody>
+							</table>
+							<div class="btn-wrap">
+								<a href="" class="btn btn-more"><span>more</span></a>
+							</div>
+						</div>
+					</section>
+				</div>
+				<div class="tab-con t2">
+
+					<section class="date-wrap">
+						<div class="tbl-wrap">
+							<div class="m-main">
+								<table class="tbl-date">
+									<colgroup>
+										<col style="width:50px" />
+										<col style="width:330px" />
+										<col style="width:50px" />
+										<col />
+									</colgroup>
+									<tbody>
+									<tr>
+										<th rowspan="2">청구일</th>
+										<td>
+											<input type="text" class="_datePick" /><span class="bar">~</span>
+											<input type="text" class="_datePick" />
+										</td>
+										<th>지점</th>
+										<td>
+											<input type="text" class="in2" />
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<ul class="sel-date after">
+												<li><a href="" class="active">오늘</a></li>
+												<li><a href="">어제</a></li>
+												<li><a href="">1주</a></li>
+												<li><a href="">1개월</a></li>
+												<li><a href="">3개월</a></li>
+												<li><a href="">6개월</a></li>
+											</ul>
+										</td>
+										<th>주문자</th>
+										<td>
+											<input type="text" class="in2" />
+										</td>
+									</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+						<div class="btn-wrap">
+							<a href="" class="btn b1">검색하기</a>
+							<a href="" class="btn b2">검색조건 초기화</a>
+						</div>
+					</section>
+
+					<section class="detail-wrap">
+						<div class="detail-tabcon active">
+							<table class="tbl-detail">
+								<colgroup>
+									<col style="width:120px" />
+									<col />
+									<col style="width:210px" />
+									<col style="width:130px" />
+									<col style="width:250px" />
+								</colgroup>
+								<thead>
+								<tr>
+									<th>청구일</th>
+									<th>품목정보</th>
+									<th>주문자정보</th>
+									<th>배송방법</th>
+									<th>결제정보</th>
+								</tr>
+								</thead>
+								<tbody>
+								<tr>
+									<td class>
+										<a href="" class="btn-wiser">
+											<dl>
+												<dt>와이저문의하기</dt>
+												<dd>01</dd>
+											</dl>
+										</a>
+										<p class="date">2017.05.31(수)</p>
+									</td>
+									<td>
+										<strong class="name">명함, 포스터외 2건</strong>
+										<div class="tag">
+											<a href="" class="item">49131</a>
+											<a href="" class="item">49131</a>
+										</div>
+									</td>
+									<td>
+										<p class="dec">사틴헤어(롯데마트영통점)<br />김사틴</p>
+									</td>
+									<td>
+										<p class="dec">로젠택배<br />(후불정산)</p>
+									</td>
+									<td>
+										<div class="top">
+											<dl class="info">
+												<dt>상품금액</dt>
+												<dd>50,000원</dd>
+											</dl>
+											<dl class="info">
+												<dt>배송비</dt>
+												<dd>50,000원</dd>
+											</dl>
+										</div>
+										<div class="btt">
+											<dl class="amount">
+												<dt>총 결제금액</dt>
+												<dd><strong class="cnt">50,000</strong>원</dd>
+											</dl>
+											<span class="pay btn">완납</span>
+											<span class="pay not btn">미납</span>
+											<span class="pay cancle btn">취소</span>
+										</div>
+									</td>
+								</tr>
+								</tbody>
+							</table>
+							<div class="btn-wrap">
+								<a href="" class="btn btn-more"><span>more</span></a>
+							</div>
+						</div>
+					</section>
+				</div>
+			</div>
+
+		</div>
+	</div><!--content-->
+</div><!--container-->
+<script>
+	$(function(){
+		pageStart();
+    })
+
+	var pageStart = function(){
+		var tab = function(){
+			$("._tab").unbind("click").on("click", function(){
+				var sid = $(this).attr("data-sid");
+
+				$(this).parent().addClass("active");
+				$(this).parent().siblings().removeClass("active");
+				$(".form-box .tab-con").removeClass("_active");
+				$(".form-box .tab-con.t"+ sid).addClass("_active");
+			})
+			$(".tab > li").eq(0).find("._tab").click();
+		}
+
+		var init = function(){
+			//nav hide
+			$(".nav-wrap").hide();
+
+			tab();
+		}
+		init();
+	}
+
+</script>
+<?php include_once("_inc/tail.html"); ?>
