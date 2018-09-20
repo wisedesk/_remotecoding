@@ -187,6 +187,7 @@ body.noscroll {overflow:hidden;}
 .section-tit:after {content:""; display:block; height:3px; width:47px; background:url(../../_img/ico_bd.png) no-repeat; position:absolute; left:50%; margin-left:-24px; bottom:-13px; }
 .section-tit span {}
 
+input[type=text]._datePick {background:#fff url(../../_img/calendar.png) no-repeat; background-position: right 10px center;}
 /*--- page-main --*/
 .thum-list:after {content:""; display:block; visibility: hidden;clear: both;height:0;}
 .thum-list > li {float:left; width:240px; margin-right:39px; margin-bottom:20px;}
@@ -585,7 +586,7 @@ label input[type=radio] {vertical-align: text-bottom}
 .form-box .date-wrap .tbl-wrap .tbl-date th {line-height:32px; vertical-align: top; color:#676767;}
 .form-box .date-wrap .tbl-wrap .tbl-date td select{height:30px; width:200px;}
 .form-box .date-wrap .tbl-wrap .tbl-date td input[type=text] {height:30px; width:164px;}
-.form-box .date-wrap .tbl-wrap .tbl-date td input[type=text]._datePick {width:134px;}
+.form-box .date-wrap .tbl-wrap .tbl-date td input[type=text]._datePick {width:145px;}
 .form-box .date-wrap .tbl-wrap .tbl-date td label {color:#676767;margin-left:10px;}
 .form-box .date-wrap .tbl-wrap .tbl-date td .sel-date > li {float:left; }
 .form-box .date-wrap .tbl-wrap .tbl-date td .sel-date > li a{display:inline-block; color:#676767; line-height:30px; height:30px; border:1px solid #ccc; border-right:0; padding:0 13px; background:#fff;}
@@ -961,3 +962,34 @@ label input[type=radio] {vertical-align: text-bottom}
 .pop-bunch .btn-wrap .contact .cnt {width:40px; color:#fff;font-size:12px;background:#556080}
 .pop-bunch .btn-wrap .btn-close {float:right;display:inline-block; width:97px; height:32px; line-height:32px; text-align: center; border-radius: 4px; border:1px solid #468ffc; font-size:12px ;color:#468ffc; }
 .pop-bunch .top {line-height:1; font-size:11px; color:#5e5e5e; margin-top:5px; }
+
+/*page-form2*/
+.page-form2 .tab-con {display:none;}
+.page-form2 .tab-con._active {display:block;}
+.page-form2 .form-box .date-wrap .tbl-wrap .m-main {width:100%; max-width:600px; margin:0 auto;}
+.page-form2 .detail-wrap {padding-top:30px;}
+.page-form2 .tbl-detail .name {font-size:14px; color:#333;}
+.page-form2 .tbl-detail .tag {text-align: center; margin-top:20px;}
+.page-form2 .tbl-detail .tag .item {margin:0 2px;display: inline-block; border: 1px solid #737272;height: 20px;line-height: 20px; padding:0 5px; border-radius:2px; color:#737272; }
+.page-form2 .tbl-detail .dec {color:#737272; font-size:12px;}
+.page-form2 .tbl-detail .top {border-bottom:1px solid #e9e9e9; padding-bottom:7px;}
+.page-form2 .tbl-detail .info dt,
+.page-form2 .tbl-detail .info dd {text-align: right; display:inline-block; color:#5c5c5c; font-size:12px; }
+.page-form2 .tbl-detail .info dt {position:relative; width:135px; padding-right:20px; }
+.page-form2 .tbl-detail .info dt:after {
+    content:"|"; display:inline-block; position:absolute; right:0; top:50%;
+    -webkit-transform: translate(0, -50%);-moz-transform: translate(0, -50%);-ms-transform: translate(0, -50%);-o-transform: translate(0, -50%);transform: translate(0, -50%);
+}
+.page-form2  .tbl-detail .info dd {width:80px;}
+
+.page-form2 .form-box .detail-wrap .tbl-detail td .btt {padding-top:10px;}
+.page-form2 .tbl-detail .amount dt,
+.page-form2 .tbl-detail .amount dd {text-align: left; display:inline-block; color:#ff7900; font-size:13px; }
+.page-form2 .tbl-detail .amount dt {position:relative; width:135px; padding-right:20px; }
+.page-form2 .tbl-detail .amount dd {width:80px;text-align: right;}
+.page-form2 .tbl-detail .amount dd .cnt {font-size:18px;}
+.page-form2 .form-box .detail-wrap .tbl-detail td .btn.pay {float:right;margin-top:10px; border-color:#168ece; color:#168ece; width:auto; padding:0 15px;}
+.page-form2 .form-box .detail-wrap .tbl-detail td .btn.pay.not {border-color:#ff2a2a; color:#ff2a2a}
+.page-form2 .form-box .detail-wrap .tbl-detail td .btn.pay.cancle {border-color:#a9a9a9; color:#a9a9a9}
+
+/* page-paymant-detail*/
