@@ -6,3 +6,9 @@ editor/
 canvas_drawBoard/
 
 _html/
+
+_asset/_font/
+
+_asset/_lib/
+
+_asset/_css/common\.css

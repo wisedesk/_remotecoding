@@ -1,0 +1,287 @@
+<?php include_once("_inc/head.html"); ?>
+<!---------- container------------->
+<input type="hidden" id="__page" value="6" />
+<div id="container" class="page-sub page-paymant-detail">
+	<div id="content">
+		<div class="m-main">
+
+			<header class="page-head">
+				<h3 class="page-tit">결제하기</h3>
+			</header>
+
+			<div class="box-wrap">
+				<form>
+					<section class="sec s1">
+						<table class="tbl">
+							<colgroup>
+								<col style="width:100px" />
+								<col />
+								<col style="width:100px" />
+								<col />
+							</colgroup>
+							<thead>
+							<tr>
+								<th colspan="4">결제방법</th>
+							</tr>
+							</thead>
+							<tbody>
+							<tr>
+								<td colspan="4">
+									<div data-action="changeShow">
+										<label class="chk-label radio"><input type="radio" name="r1" value="1"/><span class="txt">신용카드</span></label>
+										<label class="chk-label radio"><input type="radio" name="r1" value="2" /><span class="txt">카카오페이</span></label>
+										<label class="chk-label radio"><input type="radio" name="r1" value="3" /><span class="txt">실시간 계좌이체</span></label>
+									</div>
+								</td>
+							</tr>
+							<tr class="change chk1">
+								<th><span class="label">카드종류</span></th>
+								<td>
+									<select>
+										<option>BC(무이자)</option>
+									</select>
+								</td>
+								<th><span class="label">할부개월</span></th>
+								<td>
+									<select>
+										<option>일시불</option>
+									</select>
+								</td>
+							</tr>
+							<tr class="change chk3">
+								<th>입금은행</span></th>
+								<td>
+									<select>
+										<option>은행을 선택해 주세요.</option>
+									</select>
+								</td>
+								<th><span class="label">입금기한</span></th>
+								<td>
+									<p class="dec">2018년 07월 16일 23:29까지</p>
+								</td>
+							</tr>
+							<tr class="change chk3">
+								<th>현금영수증</th>
+								<td colspan="3">
+									<div class="top">
+										<label class="chk-label radio r2"><input type="radio" /><span class="txt">개인소득용</span></label>
+										<label class="chk-label radio r2"><input type="radio" /><span class="txt">사업자증빙용</span></label>
+										<label class="chk-label radio r2"><input type="radio" /><span class="txt">신청안함</span></label>
+									</div>
+									<div class="btt">
+										<select>
+											<option>010</option>
+											<option>011</option>
+											<option>016</option>
+											<option>017</option>
+											<option>018</option>
+											<option>019</option>
+										</select>
+										<span class="bar">-</span>
+										<input type="text" />
+										<span class="bar">-</span>
+										<input type="text" />
+									</div>
+								</td>
+							</tr>
+							</tbody>
+						</table>
+					</section>
+
+					<section class="sec s2">
+						<table class="tbl">
+							<colgroup>
+								<col style="width:100px" />
+								<col />
+								<col style="width:100px" />
+								<col />
+							</colgroup>
+							<thead>
+							<tr>
+								<th colspan="4">결제내역</th>
+							</tr>
+							</thead>
+							<tbody>
+							<tr>
+								<th><span class="label">주문번호</span></th>
+								<td><p class="dec">43289,43290</p></td>
+								<th><span class="label">주문자정보</span></th>
+								<td><p class="dec">사틴헤어(개롱점) / 홍길동</p></td>
+							</tr>
+							<tr>
+								<th><span class="label">품목명</span></th>
+								<td><p class="dec">명함외 1건</p></td>
+								<th><span class="label">배송방법</span></th>
+								<td><p class="dec">로젠택배(선불)</p></td>
+							</tr>
+							<tr>
+								<th><span class="label">결제코멘트</span></th>
+								<td colspan="3"><p class="dec">명함200장, 포스터20장으로 제작해주시구요, 결제청구합니다.</p></td>
+							</tr>
+							</tbody>
+						</table>
+
+						<div class="col-wrap col1">
+							<div class="col-left">
+								<a href="" class="wiser after">
+									<div class="left">
+										<strong class="tit">와이저 문의하기</strong>
+										<p class="dec">본 결제 청구내용에 대해 궁금하신 내용 문의하세요</p>
+									</div>
+									<div class="right">
+										<span class="cnt">14</span>
+									</div>
+								</a>
+							</div>
+							<div class="col-right">
+								<div class="amount-top">
+									<dl class="info">
+										<dt>총 상품금액</dt>
+										<dd><strong class="cnt">100,000</strong> 원</dd>
+									</dl>
+									<dl class="info">
+										<dt>배송비</dt>
+										<dd><strong class="cnt">3,000</strong> 원</dd>
+									</dl>
+								</div>
+								<div class="amount-btt">
+									<span class="tip">※ 배송비는 무게와 포장수량에 따라 추가 청구될 수 있습니다.</span>
+									<dl class="info">
+										<dt>총 결제금액</dt>
+										<dd><strong class="cnt">102,400</strong> 원</dd>
+									</dl>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-wrap col2">
+							<div class="col-left">
+								<dl class="term-chk">
+									<dt>
+										<label class="chk-label chk"><input type="checkbox" /><span class="txt">개인정보 제3자 제공 동의 및 주의사항</span></label>
+									</dt>
+									<dd>
+										<div class="drop-box">
+											<a href="javascript:void(0)" class="btn-drop" data-action="click">
+												<strong class="tit">개인정보 제3자 제공</strong>
+												<small class="right">펼쳐보기</small>
+											</a>
+											<div class="drop-wrap">개인정보 제3자 제공 개인정보 제3자 제공 개인정보 제3자 제공 개인정보 제3자 제공 개인정보 제3자 제공 개인정보 제3자 제공 개인정보 제3자 제공 개인정보 제3자 제공 개인정보 제3자 제공 개인정보 제3자 제공 개인정보 제3자 제공 개인정보 제3자 제공 개인정보 제3자 제공 개인정보 제3자 제공 개인정보 제3자 제공 개인정보 제3자 제공 </div>
+										</div>
+										<div class="drop-box">
+											<a href="javascript:void(0)" class="btn-drop" data-action="click">
+												<strong class="tit">주의사항</strong>
+												<small class="right">펼쳐보기</small>
+											</a>
+											<div class="drop-wrap">주의사항 주의사항 주의사항 주의사항 주의사항 주의사항 주의사항 주의사항 주의사항 주의사항 주의사항 주의사항 주의사항 주의사항 주의사항 주의사항 주의사항 주의사항 주의사항 </div>
+										</div>
+									</dd>
+								</dl>
+							</div>
+							<div class="col-right">
+								<dl class="term-chk">
+									<dt>
+										<label class="chk-label chk"><input type="checkbox" /><span class="txt">결제대행 서비스 표준이용약관</span></label>
+									</dt>
+									<dd>
+										<div class="drop-box">
+											<a href="javascript:void(0)" class="btn-drop" data-action="click">
+												<strong class="tit">전자금융거래 기본약관</strong>
+												<small class="right">펼쳐보기</small>
+											</a>
+											<div class="drop-wrap">전자금융거래 기본약관전자금융거래 기본약관전자금융거래 기본약관전자금융거래 기본약관전자금융거래 기본약관전자금융거래 기본약관전자금융거래 기본약관전자금융거래 기본약관전자금융거래 기본약관전자금융거래 기본약관전자금융거래 기본약관</div>
+										</div>
+										<div class="drop-box">
+											<a href="javascript:void(0)" class="btn-drop" data-action="click">
+												<strong class="tit">개인정보 수집 및 이용동의</strong>
+												<small class="right">펼쳐보기</small>
+											</a>
+											<div class="drop-wrap">개인정보 수집 및 이용동의개인정보 수집 및 이용동의개인정보 수집 및 이용동의개인정보 수집 및 이용동의개인정보 수집 및 이용동의개인정보 수집 및 이용동의개인정보 수집 및 이용동의개인정보 수집 및 이용동의개인정보 수집 및 이용동의</div>
+										</div>
+										<div class="drop-box">
+											<a href="javascript:void(0)" class="btn-drop" data-action="click">
+												<strong class="tit">개인정보 수집 및 위탁동의</strong>
+												<small class="right">펼쳐보기</small>
+											</a>
+											<div class="drop-wrap">개인정보 수집 및 위탁동의개인정보 수집 및 위탁동의개인정보 수집 및 위탁동의개인정보 수집 및 위탁동의개인정보 수집 및 위탁동의개인정보 수집 및 위탁동의개인정보 수집 및 위탁동의개인정보 수집 및 위탁동의개인정보 수집 및 위탁동의개인정보 수집 및 위탁동의</div>
+										</div>
+									</dd>
+								</dl>
+							</div>
+						</div>
+					</section>
+
+					<section class="sec s3">
+						<table class="tbl">
+							<colgroup>
+								<col style="width:100px" />
+								<col />
+								<col style="width:100px" />
+								<col />
+								<col style="width:100px" />
+								<col />
+							</colgroup>
+							<thead>
+							<tr>
+								<th colspan="6">결제자 정보</th>
+							</tr>
+							</thead>
+							<tbody>
+							<tr>
+								<th><span class="label">결제자</span></th>
+								<td>
+									<input type="text" />
+								</td>
+								<th><span class="label">연락처</span></th>
+								<td>
+									<input type="text" />
+								</td>
+								<th><span class="label">결제관리번호</span></th>
+								<td>
+									<input type="text" />
+								</td>
+							</tr>
+							<tr>
+								<th><span class="label">남기실 말</span></th>
+								<td colspan="5">
+									<input type="text" />
+								</td>
+							</tr>
+							</tbody>
+						</table>
+						<div class="btn-wrap">
+							<a href="" class="btn-submit">결제하기</a>
+						</div>
+					</section>
+				</form>
+			</div>
+		</div>
+	</div><!--content-->
+</div><!--container-->
+<script>
+	$(function(){
+		pageStart();
+    })
+
+	var pageStart = function(){
+		var chkChange = function(){
+			$("[data-action=changeShow] input[type=radio]").unbind("change").on("change", function(){
+				var chked = $("[data-action=changeShow] input[type=radio]:checked").val();
+				$("tr.change").removeClass("_active");
+				$("tr.change.chk"+ chked).addClass("_active");
+			})
+            $("[data-action=changeShow] input[type=radio]").eq(0).prop("checked", true);
+            $("tr.change.chk1").addClass("_active");
+		}
+
+		var init = function(){
+			//nav hide
+			$(".nav-wrap").hide();
+
+            chkChange();
+		}
+		init();
+	}
+
+</script>
+<?php include_once("_inc/tail.html"); ?>
