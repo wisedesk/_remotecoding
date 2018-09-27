@@ -33,7 +33,7 @@ select {font-family:'NanumSquare'}
 
 /*------- header --------------------------------------------------------*/
 #header {padding-top:134px;}
-#header .header-fix {position:fixed;top:0; ;left:0; right:0; z-index:1; background:#fff}
+#header .header-fix {position:fixed;top:0; ;left:0; right:0; z-index:2; background:#fff}
 #header .header1 {height:87px; border-bottom:1px solid #f1f1f1;}
 #header .header1 .inner {display:table; height:87px; width:100%;}
 #header .header1 .ad {display:table-cell; height:100%; vertical-align: middle;}
