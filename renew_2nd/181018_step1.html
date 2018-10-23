@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <?php include_once("_inc/asset.html"); ?>
+</head>
+<body>
+<div id="wrap" class="type-item">
+    <header class="page-header">
+        <h2 class="page-tit">와이즈데스크 품목등록</h2>
+        <p class="page-dec">품목 등록하면 간편주문하기 메뉴에서 확인할 수 있습니다.</p>
+    </header>
+    <!---------- container------------->
+    <div id="container" class="page-sub page-step1">
+        <div id="content">
+            <div class="m-main">
+                <section class="sec-category">
+                    <div class="box">
+                        <header class="sec-header">
+                            <h3 class="sec-tit">카테고리 선택</h3>
+                            <p class="sec-dec">* 등록하실 품목의 카테고리를 선택하세요.</p>
+                            <p class="sec-dec right"><strong>* 는 필수입력 항목</strong>입니다.</p>
+                        </header>
+                        <div class="radio-wrap">
+                            <ul class="after">
+                                <li>
+                                    <label class="chk-label radio r3"><input type="radio" /><span class="txt">명함</span></label>
+                                    <label class="chk-label radio r3"><input type="radio" /><span class="txt">봉투</span></label>
+                                </li>
+                                <li>
+                                    <label class="chk-label radio r3"><input type="radio" /><span class="txt">배너</span></label>
+                                    <label class="chk-label radio r3"><input type="radio" /><span class="txt">브로슈어</span></label>
+                                </li>
+                                <li>
+                                    <label class="chk-label radio r3"><input type="radio" /><span class="txt">배너 거치대</span></label>
+                                    <label class="chk-label radio r3"><input type="radio" /><span class="txt">서식 / 양식지</span></label>
+                                </li>
+                                <li>
+                                    <label class="chk-label radio r3"><input type="radio" /><span class="txt">메뉴보드</span></label>
+                                    <label class="chk-label radio r3"><input type="radio" /><span class="txt">스탬프</span></label>
+                                </li>
+                                <li>
+                                    <label class="chk-label radio r3"><input type="radio" /><span class="txt">POP</span></label>
+                                    <label class="chk-label radio r3"><input type="radio" /><span class="txt">스티커</span></label>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="form-wrap">
+                        <dl class="form-dl">
+                            <dt><span class="label req">품목명</span></dt>
+                            <dd>
+                                <input type="text" placeholder="간편주문에서 보여지는 이름입니다." />
+                                <p class="tip">ex. 본사명함, 도장쿠폰, 50%할인쿠폰</p>
+                            </dd>
+                        </dl>
+                        <dl class="form-dl">
+                            <dt><span class="label req">품목설명</span></dt>
+                            <dd>
+                                <input type="text" placeholder="간편주문에서 보여지는 설명입니다." />
+                                <p class="tip">최대 20자</p>
+                            </dd>
+                        </dl>
+                        <dl class="form-dl">
+                            <dt><span class="label">버전</span></dt>
+                            <dd>
+                                <input type="text" placeholder="버전관리가 필요한 품목의 경우 입력해주세요." />
+                                <p class="tip">ex. 20181020-1 (생성된 날짜-1)</p>
+                            </dd>
+                        </dl>
+                        <dl class="form-dl">
+                            <dt><span class="label">상세설명</span></dt>
+                            <dd>
+                                <textarea placeholder="상세설명을 입력해주세요."></textarea>
+                            </dd>
+                        </dl>
+                    </div>
+
+                </section>
+
+                <section class="sec-detail">
+                    <div class="box">
+                        <header class="sec-header">
+                            <h3 class="sec-tit">사양입력</h3>
+                        </header>
+                        <div class="form-wrap">
+                            <dl class="form-dl f1">
+                                <dt><span class="label">사이즈</span></dt>
+                                <dd>
+                                    <p class="dec">
+                                        주문 가능하도록 제공할 사이즈를 선택해주세요. (최대 3개)
+                                        <small>* 사이즈 선택할 수 있도록 제공할 경우 기본값을 선택해주세요</small>
+                                    </p>
+                                    <div class="more-wrap">
+                                        <div class="after">
+                                            <label class="chk-label checkbox c3"><input type="checkbox" /><span class="txt">86 X 52mm</span><span class="mark _active">기본값</span></label>
+                                            <label class="chk-label checkbox c3"><input type="checkbox" /><span class="txt">86 X 52mm</span><span class="mark">기본값</span></label>
+                                            <label class="chk-label checkbox c3"><input type="checkbox" /><span class="txt">86 X 52mm</span></label>
+                                        </div>
+                                        <div class="direct-wrap">
+                                            <label class="chk-label checkbox c3"><input type="checkbox" /><span class="txt">직접입력</span></label>
+                                            <input type="text" placeholder="가로" class="shot"/><span class="bar">X</span>
+                                            <input type="text" placeholder="세로" class="shot"/><span class="bar">X</span>
+                                            <input type="text" placeholder="높이" class="shot"/><span class="bar">mm</span>
+                                        </div>
+                                    </div>
+                                </dd>
+                            </dl>
+                            <dl class="form-dl">
+                                <dt><span class="label">면수</span></dt>
+                                <dd>
+                                    <p class="dec">
+                                        주문 시 면수를 선택 옵션을 제공하려면 체크해주세요.
+                                        <small>* 면수 선택할 수 있도록 제공할 경우 기본값을 선택해주세요  </small>
+                                    </p>
+                                    <div class="more-wrap">
+                                        <div class="after">
+                                            <label class="chk-label checkbox c3"><input type="checkbox" /><span class="txt">단면</span><span class="mark _active">기본값</span></label>
+                                            <label class="chk-label checkbox c3"><input type="checkbox" /><span class="txt">양면</span><span class="mark">기본값</span></label>
+                                            <label class="chk-label checkbox c3"><input type="checkbox" /><span class="txt">해당없음</span><span class="mark">기본값</span></label>
+                                        </div>
+                                    </div>
+                                </dd>
+                            </dl>
+                            <dl class="form-dl">
+                                <dt><span class="label">페이지 수</span></dt>
+                                <dd>
+                                    <p class="dec">
+                                        필요할 경우 페이지 수를 입력해주세요.
+                                        <small>* 페이지수를 입력해주세요</small>
+                                    </p>
+                                    <div class="page-wrap">
+                                        <input type="text" placeholder="" class="shot"/><span class="bar">페이지</span>
+                                    </div>
+                                </dd>
+                            </dl>
+                            <dl class="form-dl">
+                                <dt><span class="label">재질</span></dt>
+                                <dd>
+                                    <p class="dec">
+                                        주문 시 제공할 재질을 선택해주세요. (최대 3개)
+                                        <small>* 선택한 재질의 기본값을 선택해 주세요.</small>
+                                    </p>
+                                    <div class="more-wrap">
+                                        <div class="after">
+                                            <label class="chk-label checkbox c3"><input type="checkbox" /><span class="txt">양면 PET (무광)</span><span class="mark _active">기본값</span></label>
+                                            <label class="chk-label checkbox c3"><input type="checkbox" /><span class="txt">양면 PET (무광)</span><span class="mark">기본값</span></label>
+                                            <label class="chk-label checkbox c3"><input type="checkbox" /><span class="txt">양면 PET (무광)</span><span class="mark">기본값</span></label>
+                                            <label class="chk-label checkbox c3"><input type="checkbox" /><span class="txt">양면 PET (무광)</span><span class="mark">기본값</span></label>
+                                            <label class="chk-label checkbox c3"><input type="checkbox" /><span class="txt">양면 PET (무광)</span><span class="mark">기본값</span></label>
+                                            <label class="chk-label checkbox c3"><input type="checkbox" /><span class="txt">양면 PET (무광)</span><span class="mark">기본값</span></label>
+                                            <label class="chk-label checkbox c3"><input type="checkbox" /><span class="txt">양면 PET (무광)</span><span class="mark">기본값</span></label>
+                                            <label class="chk-label checkbox c3"><input type="checkbox" /><span class="txt">양면 PET (무광)</span><span class="mark">기본값</span></label>
+                                            <label class="chk-label checkbox c3"><input type="checkbox" /><span class="txt">양면 PET (무광)</span><span class="mark">기본값</span></label>
+                                        </div>
+                                    </div>
+                                    <div class="direct-wrap">
+                                        <label class="chk-label checkbox c3"><input type="checkbox" /><span class="txt">직접입력</span></label>
+                                        <input type="text" placeholder="" class="full"/>
+                                    </div>
+                                </dd>
+                            </dl>
+                            <dl class="form-dl">
+                                <dt><span class="label">후가공</span></dt>
+                                <dd>
+                                    <p class="dec">
+                                        원하는 후가공이 있으면 입력해주세요. (선택사항)
+                                    </p>
+                                    <div class="direct-wrap">
+                                        <input type="text" placeholder="후가공을 입력해주세요." class="full"/>
+                                    </div>
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="sec-img">
+                    <div class="box">
+                        <header class="sec-header">
+                            <h3 class="sec-tit">이미지 등록</h3>
+                        </header>
+                        <div class="form-wrap">
+                            <dl class="form-dl f1">
+                                <dt><span class="label">대표 이미지</span></dt>
+                                <dd>
+                                    <p class="dec d1">권장 크기 : 640 X 640px</p>
+                                    <div class="col-wrap after">
+                                        <div class="col col-50">
+                                            <div class="img-container">
+                                                <div class="img-wrap" style="background-image:url(../_img/s/s1.png)"></div>
+                                                <div class="btn-wrap">
+                                                    <a href="javascript:void(0)" class="item zoom"></a>
+                                                    <a href="javascript:void(0)" class="item write"></a>
+                                                    <a href="javascript:void(0)" class="item cancle"></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col col-50">
+                                            <div class="img-container">
+                                                <label class="file-wrap">
+                                                    <input type="file" />
+                                                    <span class="ico"><span class="txt">대표 이미지 추가하기</span></span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <a href="" class="btn-renew sm c1">일괄적용</a>
+                                    <p class="tip">일괄적용을 누르면 동일한 이미지로 반영됩니다. </p>
+                                </dd>
+                            </dl>
+
+                            <dl class="form-dl">
+                                <dt><span class="label">대표 이미지</span></dt>
+                                <dd>
+                                    <div class="col-wrap after">
+                                        <div class="col col-25">
+                                            <div class="img-container">
+                                                <div class="img-wrap" style="background-image:url(../_img/s/s1.png)"></div>
+                                                <div class="btn-wrap">
+                                                    <a href="javascript:void(0)" class="item zoom"></a>
+                                                    <a href="javascript:void(0)" class="item write"></a>
+                                                    <a href="javascript:void(0)" class="item cancle"></a>
+                                                </div>
+                                            </div>
+                                            <div class="dec-wrap">
+                                                목록 썸네일<br />
+                                                (238 X 226px)
+                                            </div>
+                                        </div>
+                                        <div class="col col-25">
+                                            <div class="img-container">
+                                                <div class="img-wrap" style="background-image:url(../_img/s/s1.png)"></div>
+                                                <div class="btn-wrap">
+                                                    <a href="javascript:void(0)" class="item zoom"></a>
+                                                    <a href="javascript:void(0)" class="item write"></a>
+                                                    <a href="javascript:void(0)" class="item cancle"></a>
+                                                </div>
+                                            </div>
+                                            <div class="dec-wrap">
+                                                목록 썸네일<br />
+                                                (238 X 226px)
+                                            </div>
+                                        </div>
+                                        <div class="col col-25">
+                                            <div class="img-container">
+                                                <div class="img-wrap" style="background-image:url(../_img/s/s1.png)"></div>
+                                                <div class="btn-wrap">
+                                                    <a href="javascript:void(0)" class="item zoom"></a>
+                                                    <a href="javascript:void(0)" class="item write"></a>
+                                                    <a href="javascript:void(0)" class="item cancle"></a>
+                                                </div>
+                                            </div>
+                                            <div class="dec-wrap">
+                                                목록 썸네일<br />
+                                                (238 X 226px)
+                                            </div>
+                                        </div>
+                                        <div class="col col-25">
+                                            <div class="img-container">
+                                                <label class="file-wrap">
+                                                    <input type="file" />
+                                                    <span class="ico"></span>
+                                                </label>
+                                            </div>
+                                            <div class="dec-wrap">
+                                                추가하기
+                                            </div>
+                                        </div>
+                                    </div>
+                                </dd>
+                            </dl>
+
+                            <dl class="form-dl">
+                                <dt></dt>
+                                <dd>
+                                    <p class="dec d1">
+                                        권장 크기 : 640 X 640 (윈도우 대상 750 X 1000)<br />
+                                        * 추가 이미지는 최대 9개까지 설정할 수 있습니다.<br />
+                                        * jpg, jpeg, gif, png, bmp 형식의 정지 이미지만 등록됩니다. (웅직이는 이미지의 경우, 첫번째 컷에 등록)
+                                    </p>
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+                </section>
+                <div class="btt-btn">
+                    <a href="javascript:void(0)" class="btn-renew c2" data-action="submit">등록하기</a>
+                    <a href="" class="btn-renew">취소</a>
+                </div>
+            </div>
+        </div><!--content-->
+    </div><!--container-->
+
+
+
+</div>
+<script>
+    $(function(){
+        bind();
+    })
+    var save = function(){
+        var popHtml = [
+            '<div class="pop-type2 pop-next">',
+            '   <header class="pop-header">와이즈데스크 알림<a href="javascript:Layer.loadClose();" class="btn-close"><span class="bar"></span></a></header>',
+            '   <div class="pop-content">',
+            '       <p class="dec"> 기본품목이 등록되었습니다.<br /> 추가사항 입력창으로 이동하시겠습니까?<br /> <small>* 홈 > 마이페이지 > 품목페이지에서 나중에 입력 가능합니다.</small> </p>',
+            '       <div class="pop-btn-wrap">',
+            '           <a href="181018_step2.html" class="btn-renew c1" data-action="submit">추가사항 바로 입력하기</a>',
+            '           <a href="javascript:void(0)" class="btn-renew" data-action="pop-cancle">나중에 입력하기</a>',
+            '       </div>',
+            '   </div>',
+            '</div>'
+        ].join('')
+
+        Layer.append(popHtml, 'pop');
+    }
+    var bind = function(){
+        $("[data-action=submit]").on("click", function(){
+            save();
+        })
+        $(document).on("click", "[data-action=pop-cancle]", function(){
+            Layer.loadClose()
+        })
+    }
+</script>
+</body>
+</html>

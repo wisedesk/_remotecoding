@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <?php include_once("_inc/asset.html"); ?>
+</head>
+<body>
+<div id="wrap" class="type-item">
+    <header class="page-header">
+        <h2 class="page-tit">추가입력사항</h2>
+        <p class="page-dec">주문 시 필요한 품목 추가사항을기재해주세요.</p>
+    </header>
+    <!---------- container------------->
+    <div id="container" class="page-sub page-step1 page-step2">
+        <div id="content">
+            <div class="m-main">
+                <section class="sec-img">
+                    <div class="box">
+                        <header class="sec-header">
+                            <h3 class="sec-tit">시안 이미지</h3>
+                            <p class="sec-dec right"><strong>* 시안 수정은 품목수정을 통해 변경하셔야 합니다.</strong></p>
+                        </header>
+                        <div class="form-wrap">
+                            <dl class="form-dl">
+                                <dt><span class="label">대표 이미지</span></dt>
+                                <dd>
+                                    <div class="col col-big">
+                                        <div class="img-container">
+                                            <div class="img-wrap" style="background-image:url(../_img/s/s1.png)"></div>
+                                        </div>
+                                    </div>
+                                </dd>
+                            </dl>
+                            <dl class="form-dl">
+                                <dt><span class="label">추가 이미지</span></dt>
+                                <dd>
+                                    <div class="col-wrap after">
+                                        <div class="col col-33">
+                                            <div class="img-container">
+                                                <div class="img-wrap" style="background-image:url(../_img/s/s1.png)"></div>
+                                            </div>
+                                        </div>
+                                        <div class="col col-33">
+                                            <div class="img-container">
+                                                <div class="img-wrap" style="background-image:url(../_img/s/s1.png)"></div>
+                                            </div>
+                                        </div>
+                                        <div class="col col-33">
+                                            <div class="img-container">
+                                                <div class="img-wrap" style="background-image:url(../_img/s/s1.png)"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="sec-2">
+                    <div class="box">
+                        <header class="sec-header">
+                            <h3 class="sec-tit">입력항목</h3>
+                            <p class="sec-dec right">* 주문 시 디자인 수정을 위해 입력받을 항목 등록해 주세요.</p>
+                        </header>
+                        <table class="tbl">
+                            <colgroup>
+                                <col style="width:35px;" />
+                                <col style="width:35px;" />
+                                <col style="width:150px;" />
+                                <col style="width:35px;" />
+                                <col style="width:150px;" />
+                                <col />
+                                <col />
+                            </colgroup>
+                            <thead>
+                            <tr>
+                                <th></th>
+                                <th>No.</th>
+                                <th>입력항목</th>
+                                <th>필수</th>
+                                <th>입력형태</th>
+                                <th>사용값(콤마로 나열)</th>
+                                <th>입력항목 설명</th>
+                            </tr>
+                            </thead>
+                            <tbody data-action="trAppend"></tbody>
+                        </table>
+                        <input type="hidden" data-action="rowCnt"/>
+                        <div class="tbl-btn">
+                            <a href="javascript:void(0);" class="item btn-up"><span class="txt">위로</span></a>
+                            <a href="javascript:void(0);" class="item btn-down"><span class="txt">아래로</span></a>
+                            <a href="javascript:void(0);" class="item btn-del"><span class="txt" data-action="rowDel">삭제</span></a>
+                            <a href="javascript:void(0);" class="btn-add" data-action="addRow">입력항목 추가하기</a>
+                        </div>
+                        <label class="chk-label checkbox c3"><input type="checkbox" /><span class="txt">직원선택창 사용 (이전에 주문한 직원정보를 불러서 입력할 수 있는 기능으로 명함만 제공합니다.)</span></label>
+                    </div>
+                </section>
+
+                <section class="sec-3">
+                    <div class="box">
+                        <header class="sec-header">
+                            <h3 class="sec-tit">선택옵션</h3>
+                        </header>
+                        <dl class="form-dl">
+                            <dd>
+                                <label class="chk-label checkbox c3"><input type="checkbox" /><span class="txt">시안 확인 안함 (선택 할 경우 디자인 작업 후 시안 요청 없이 바로 인쇄제작에 들어갑니다.)</span></label>
+                                <label class="chk-label checkbox c3"><input type="checkbox" /><span class="txt">디자인만 요청 (선택할 경우 제작사양을 선택했더라도 시안확정 하면 인쇄제작 없이 완료 처리됩니다.)</span></label>
+                                <label class="chk-label checkbox c3"><input type="checkbox" /><span class="txt">무료 제작 품목 (선택할 경우 무료로 제작됩니다.)</span></label>
+                            </dd>
+                        </dl>
+                        <dl class="form-dl">
+                            <dd>
+                                <label class="chk-label checkbox c3"><input type="checkbox" /><span class="txt">품목 참고사항 (품목에 참고할 수 있는 코멘트를 남길 수 있습니다.)</span></label>
+                                <textarea placeholder="코멘트를 입력해주세요."></textarea>
+                            </dd>
+                        </dl>
+                    </div>
+                </section>
+
+                <section class="sec-4">
+                    <div class="box">
+                        <header class="sec-header">
+                            <h3 class="sec-tit">메뉴 태그 선택</h3>
+                            <p class="sec-dec right">* 등록한 품목과 관련된 태그를 선택해 주세요</p>
+                        </header>
+                        <dl class="form-dl">
+                            <dt><span class="label">품목</span></dt>
+                            <dd>
+                                <label class="chk-label checkbox c3"><input type="checkbox" /><span class="txt">배너</span></label>
+                                <label class="chk-label checkbox c3"><input type="checkbox" /><span class="txt">포스터</span></label>
+                                <label class="chk-label checkbox c3"><input type="checkbox" /><span class="txt">명함</span></label>
+                                <label class="chk-label checkbox c3"><input type="checkbox" /><span class="txt">현수막</span></label>
+                                <label class="chk-label checkbox c3"><input type="checkbox" /><span class="txt">스탬프</span></label>
+                                <label class="chk-label checkbox c3"><input type="checkbox" /><span class="txt">네임텍</span></label>
+                                <label class="chk-label checkbox c3"><input type="checkbox" /><span class="txt">메뉴보드</span></label>
+                            </dd>
+                        </dl>
+                        <dl class="form-dl">
+                            <dt><span class="label">이벤트</span></dt>
+                            <dd>
+                                <label class="chk-label checkbox c3"><input type="checkbox" /><span class="txt">할인 이벤트</span></label>
+                                <label class="chk-label checkbox c3"><input type="checkbox" /><span class="txt">0주년 행사</span></label>
+                                <label class="chk-label checkbox c3"><input type="checkbox" /><span class="txt">오픈 이벤트</span></label>
+                                <label class="chk-label checkbox c3"><input type="checkbox" /><span class="txt">시즌 이벤트</span></label>
+                                <label class="chk-label checkbox c3"><input type="checkbox" /><span class="txt">명절 이벤트</span></label>
+                                <label class="chk-label checkbox c3"><input type="checkbox" /><span class="txt">VIP 이벤트</span></label>
+                                <label class="chk-label checkbox c3"><input type="checkbox" /><span class="txt">1+1 이벤트</span></label>
+                                <label class="chk-label checkbox c3"><input type="checkbox" /><span class="txt">Size-up 행사</span></label>
+                            </dd>
+                        </dl>
+                        <dl class="form-dl">
+                            <dt><span class="label">판매상품</span></dt>
+                            <dd>
+                                <label class="chk-label checkbox c3"><input type="checkbox" /><span class="txt">할인 이벤트</span></label>
+                                <label class="chk-label checkbox c3"><input type="checkbox" /><span class="txt">0주년 행사</span></label>
+                                <label class="chk-label checkbox c3"><input type="checkbox" /><span class="txt">오픈 이벤트</span></label>
+                                <label class="chk-label checkbox c3"><input type="checkbox" /><span class="txt">시즌 이벤트</span></label>
+                                <label class="chk-label checkbox c3"><input type="checkbox" /><span class="txt">명절 이벤트</span></label>
+                                <label class="chk-label checkbox c3"><input type="checkbox" /><span class="txt">VIP 이벤트</span></label>
+                                <label class="chk-label checkbox c3"><input type="checkbox" /><span class="txt">1+1 이벤트</span></label>
+                                <label class="chk-label checkbox c3"><input type="checkbox" /><span class="txt">Size-up 행사</span></label>
+                            </dd>
+                        </dl>
+                        <dl class="form-dl">
+                            <dt><span class="label">설치장소</span></dt>
+                            <dd>
+                                <label class="chk-label checkbox c3"><input type="checkbox" /><span class="txt">할인 이벤트</span></label>
+                                <label class="chk-label checkbox c3"><input type="checkbox" /><span class="txt">0주년 행사</span></label>
+                                <label class="chk-label checkbox c3"><input type="checkbox" /><span class="txt">오픈 이벤트</span></label>
+                                <label class="chk-label checkbox c3"><input type="checkbox" /><span class="txt">시즌 이벤트</span></label>
+                                <label class="chk-label checkbox c3"><input type="checkbox" /><span class="txt">명절 이벤트</span></label>
+                                <label class="chk-label checkbox c3"><input type="checkbox" /><span class="txt">VIP 이벤트</span></label>
+                                <label class="chk-label checkbox c3"><input type="checkbox" /><span class="txt">1+1 이벤트</span></label>
+                                <label class="chk-label checkbox c3"><input type="checkbox" /><span class="txt">Size-up 행사</span></label>
+                            </dd>
+                        </dl>
+                    </div>
+                </section>
+
+                <section class="sec-5">
+                    <div class="box">
+                        <header class="sec-header">
+                            <h3 class="sec-tit">작업 원본 파일 등록</h3>
+                            <p class="sec-dec right">* 작업원본 파일을 등록해 주세요.</p>
+                        </header>
+                        <p class="dec">
+                            주문 가능하도록 제공할 사이즈를 선택해주세요. (최대 3개)
+                            <small>* 사이즈 선택할 수 있도록 제공할 경우 기본값을 선택해주세요</small>
+                        </p>
+                        <dl class="form-dl type2">
+                            <dt> [필수] 작업 가능한(아웃라인 안잡은) 작업 원본 파일을 업로드 해주세요. (ai, psd, indd, eps, pdf 파일만 가능)</dt>
+                            <dd>
+                                <label class="file-wrap">
+                                    <input type="file" />
+                                    <span class="ico"><span class="txt">여기를 눌러 파일 업로드 하기</span></span>
+                                </label>
+                            </dd>
+                        </dl>
+                    </div>
+                </section>
+
+                <section class="sec-6">
+                    <div class="box">
+                        <header class="sec-header">
+                            <h3 class="sec-tit">기타 요청 사항</h3>
+                            <p class="sec-dec right">* 품목을 등록하면서 궁금한 점이나 요청사항 남겨주세요 와이저로 답변드립니다..</p>
+                        </header>
+                        <textarea placeholder="요청드립니다."></textarea>
+                    </div>
+                </section>
+
+                <div class="btt-btn">
+                    <a href="" class="btn-renew c2">등록하기</a>
+                    <a href="" class="btn-renew">취소</a>
+                </div>
+
+            </div>
+        </div><!--content-->
+    </div><!--container-->
+</div>
+<script>
+    $(function(){
+        init();
+    })
+
+    var cnt = $("[data-action=rowCnt]").val() ? $("[data-action=rowCnt]").val() : "0";
+    var addRow = function(){
+        cnt = parseInt(cnt) + 1;
+        $("[data-action=rowCnt]").val(cnt);
+
+        var rowHTML = [
+            '<tr data-idx="'+ cnt +'">',
+            '   <td>',
+            '       <label class="chk-label radio"><input type="radio" name="r1" value="'+ cnt +'" /><span class="txt">&nbsp;</span></label>',
+            '   </td>',
+            '   <td><span data-action="no">'+ cnt +'</span></td>',
+            '   <td>',
+            '       <select>',
+            '           <option>지점명 (한글)</option>',
+            '       </select>',
+            '   </td>',
+            '   <td>',
+            '       <label class="chk-label checkbox c3"><input type="checkbox" /><span class="txt">&nbsp;</span></label>',
+            '   </td>',
+            '   <td>',
+            '       <select>',
+            '           <option>지점명 (한글)</option>',
+            '       </select>',
+            '   </td>',
+            '   <td><input type="text" /></td>',
+            '   <td><input type="text" /></td>',
+            '</tr>'
+        ].join('');
+
+        $("[data-action=trAppend]").append(rowHTML);
+    }
+
+    var delRow = function(){
+        if($("[name=r1]:checked").val()) {
+            $("[data-idx="+ $("[name=r1]:checked").val() +"]").remove();
+
+            var $tbody = $("[data-action=trAppend]");
+            $tbody.find("tr").each(function(i) {
+                $tbody.find("tr").eq(i).attr("data-idx", parseInt(i)+1);
+                $tbody.find("tr").eq(i).find("[data-action=no]").text(parseInt(i)+1);
+                $tbody.find("tr").eq(i).find("[name=r1]").val(parseInt(i)+1);
+                cnt = i + 1;
+            })
+            $("[data-action=rowCnt]").val(cnt);
+        } else {
+            alert("삭제하실 항목을 선택해 주세요.");
+        }
+    }
+
+    var bind = function(){
+        $("[data-action=addRow]").unbind("click").on("click", function(){
+            addRow();
+        })
+        $("[data-action=rowDel]").unbind("click").on("click", function(){
+            delRow();
+        })
+    }
+    var init = function(){
+        bind();
+        addRow();
+    }
+</script>
+</body>
+</html>

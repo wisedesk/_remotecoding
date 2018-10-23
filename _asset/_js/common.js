@@ -121,6 +121,17 @@ var Layer = {
         });
         Layer.open(sid);
     },
+    append : function(popHtml, sid) {
+        $(".layer").remove();
+        var html = '<div class="layer"><div class="_pop-load '+ sid +'"></div><div class="dim"></div></div>';
+        $("body").append(html);
+        $(".layer ._pop-load").append(popHtml)
+        var popHeight = $(".layer ._pop-load").outerHeight();
+        $(".layer ._pop-load").attr("data-height", popHeight);
+
+        resizePop();
+        Layer.open(sid);
+    },
     loadClose : function() {
         $(".layer").remove();
         $("body").removeClass("noscroll");
