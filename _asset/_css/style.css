@@ -907,6 +907,15 @@ label input[type=radio] {vertical-align: text-bottom}
 .page-order .sort-wrap {display:none}
 .page-order .sort-wrap.active {display:block}
 
+.page-order .detail-info {width:100%; max-width:340px; margin:0 auto; display:block ;margin-top:50px;}
+.page-order .detail-info dt,
+.page-order .detail-info dd {display:block; width:100%;}
+.page-order .detail-info dt {padding:0 20px; background:#556080;}
+.page-order .detail-info dt .tit {display:block; width:100%; line-height:38px; height:38px; position:relative; text-align: center;}
+.page-order .detail-info dt .tit:before {content:""; display:block ;width:100%; height:1px; background:#8c94a9; position:absolute; left:0; top:50%; }
+.page-order .detail-info dt .tit .txt {display:inline-block; padding:0 20px; color:#fff; font-size:13px;font-weight:700;position:relative; z-index:1;background:#556080;}
+.page-order .detail-info dd {padding:15px 20px; background:#ecf4ff; border:1px solid #ccc; border-bottom-width:2px; border-top:0; color:#333; text-align: left; min-height:315px; z-index:1;}
+
     /*pop ship*/
 ._btn {display:inline-block; line-height:32px; height:32px; text-align:center; padding:0 20px; border:1px solid #ccc}
 .ship {padding:50px 30px; width:866px;}
