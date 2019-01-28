@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <?php include_once("_inc/asset.html"); ?>
+</head>
+<body>
+<div id="wrap" class="type-item">
+    <header class="page-header">
+        <h2 class="page-tit">새로운 제품 주문</h2>
+        <p class="page-dec">간편주문하기에 등록되지 않은 제품을 주문하실 수 있습니다.</p>
+    </header>
+    <!---------- container------------->
+    <div id="container" class="page-sub page-step1 page-n2">
+        <div id="content">
+            <div class="m-main">
+                <section class="sec1">
+                    <header class="sec-header">
+                        <h3 class="sec-tit ico">주문정보입력</h3>
+                    </header>
+                    <div class="form-wrap">
+                        <dl class="form-dl">
+                            <dt><span class="label">지점검색</span></dt>
+                            <dd>
+                                <input type="text" placeholder="인쇄물 사용 지점을 검색하세요">
+                                <div class="btn-wrap">
+                                    <a href="" class="btn-renew sm c0">검색</a>
+                                    <a href="" class="btn-renew sm c1">자동입력</a>
+                                    <a href="" class="btn-renew sm c3">입력내용 초기화</a>
+                                </div>
+                            </dd>
+                        </dl>
+                        <dl class="form-dl">
+                            <dt><span class="label req">주문제목</span></dt>
+                            <dd>
+                                <input type="text" placeholder="별칭으로 보여질 이름을 입력하세요">
+                                <p class="tip">ex. 50%할인쿠폰, 10칸도장쿠폰</p>
+                            </dd>
+                        </dl>
+                    </div>
+                </section>
+
+                <section class="sec-category">
+                    <div class="box">
+                        <header class="sec-header">
+                            <h3 class="sec-tit">품목선택</h3>
+                            <p class="sec-dec right">주문하실 품목을 선택해주세요.</p>
+                        </header>
+                        <div class="radio-wrap">
+                            <ul class="after">
+                                <li>
+                                    <label class="chk-label radio r3"><input type="radio" /><span class="txt">명함</span></label>
+                                    <label class="chk-label radio r3"><input type="radio" /><span class="txt">봉투</span></label>
+                                </li>
+                                <li>
+                                    <label class="chk-label radio r3"><input type="radio" /><span class="txt">배너</span></label>
+                                    <label class="chk-label radio r3"><input type="radio" /><span class="txt">브로슈어</span></label>
+                                </li>
+                                <li>
+                                    <label class="chk-label radio r3"><input type="radio" /><span class="txt">배너 거치대</span></label>
+                                    <label class="chk-label radio r3"><input type="radio" /><span class="txt">서식 / 양식지</span></label>
+                                </li>
+                                <li>
+                                    <label class="chk-label radio r3"><input type="radio" /><span class="txt">메뉴보드</span></label>
+                                    <label class="chk-label radio r3"><input type="radio" /><span class="txt">스탬프</span></label>
+                                </li>
+                                <li>
+                                    <label class="chk-label radio r3"><input type="radio" /><span class="txt">POP</span></label>
+                                    <label class="chk-label radio r3"><input type="radio" /><span class="txt">스티커</span></label>
+                                </li>
+                            </ul>
+                            <p class="tip">선택하실 품목이 없을 경우 제작 상담으로 진행해 주세요. <a href="" target="_blank">[제작상담 바로가기]</a></p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="sec-detail">
+                    <div class="box">
+                        <header class="sec-header">
+                            <h3 class="sec-tit">사양입력</h3>
+                        </header>
+                        <div class="form-wrap">
+                            <dl class="form-dl f1">
+                                <dt><span class="label">사이즈</span></dt>
+                                <dd>
+                                    <div class="after">
+                                        <label class="chk-label radio c3"><input type="radio" /><span class="txt">86 X 52mm</span></label>
+                                        <label class="chk-label radio c3"><input type="radio" /><span class="txt">명함 기본 : 90 X 50mm</span></label>
+                                        <label class="chk-label radio c3"><input type="radio" /><span class="txt">카드 기본 : 86 X 54mm</span></label>
+                                    </div>
+                                    <div class="direct-wrap">
+                                        <label class="chk-label radio c3"><input type="radio" /><span class="txt">직접입력</span></label>
+                                        <input type="text" placeholder="가로" class="shot"/><span class="bar">X</span>
+                                        <input type="text" placeholder="세로" class="shot"/><span class="bar">X</span>
+                                        <input type="text" placeholder="높이" class="shot"/><span class="bar">mm</span>
+                                    </div>
+                                </dd>
+                            </dl>
+                            <dl class="form-dl">
+                                <dt><span class="label">재질</span></dt>
+                                <dd>
+                                    <div class="after">
+                                        <label class="chk-label radio c3"><input type="radio" /><span class="txt">양면 PET (무광)</span></label>
+                                        <label class="chk-label radio c3"><input type="radio" /><span class="txt">양면 PET (유광)</span></label>
+                                        <label class="chk-label radio c3"><input type="radio" /><span class="txt">인화지 (무광)</span></label>
+                                        <label class="chk-label radio c3"><input type="radio" /><span class="txt">인화지 (유광)</span></label>
+                                        <label class="chk-label radio c3"><input type="radio" /><span class="txt">아트 150g</span></label>
+                                        <label class="chk-label radio c3"><input type="radio" /><span class="txt">아트 180g</span></label>
+                                        <label class="chk-label radio c3"><input type="radio" /><span class="txt">아트 200g</span></label>
+                                        <label class="chk-label radio c3"><input type="radio" /><span class="txt">아트 250g</span></label>
+                                    </div>
+                                    <div class="direct-wrap">
+                                        <label class="chk-label radio c3"><input type="radio" /><span class="txt">직접입력</span></label>
+                                        <input type="text" placeholder="" class="full"/>
+                                    </div>
+                                </dd>
+                            </dl>
+                            <dl class="form-dl">
+                                <dt><span class="label">면수</span></dt>
+                                <dd>
+                                    <ul class="after">
+                                        <label class="chk-label radio c3"><input type="radio" /><span class="txt">단면</span></label>
+                                        <label class="chk-label radio c3"><input type="radio" /><span class="txt">양면</span></label>
+                                        <label class="chk-label radio c3"><input type="radio" /><span class="txt">해당없음</span></label>
+                                    </ul>
+                                </dd>
+                            </dl>
+                            <dl class="form-dl">
+                                <dt><span class="label">페이지 수</span></dt>
+                                <dd>
+                                    <div class="page-wrap">
+                                        <input type="text" placeholder="" class="shot"/><span class="bar">페이지</span>
+                                        <p class="tip">* 필요한경우 페이지수 입력해주세요</p>
+                                    </div>
+                                </dd>
+                            </dl>
+
+                            <dl class="form-dl">
+                                <dt><span class="label">후가공</span></dt>
+                                <dd>
+                                    <p class="dec">
+                                        원하는 후가공을 선택해 주세요
+                                    </p>
+                                    <div class="after label-wrap">
+                                        <label class="chk-label checkbox c3"><input type="checkbox" value="1" data-action="process"/><span class="txt">오시</span></label>
+                                        <label class="chk-label checkbox c3"><input type="checkbox" value="2" data-action="process"/><span class="txt">도무송</span></label>
+                                        <label class="chk-label checkbox c3"><input type="checkbox" value="3" data-action="process"/><span class="txt">넘버링</span></label>
+                                        <label class="chk-label checkbox c3"><input type="checkbox" value="4" data-action="process"/><span class="txt">미싱</span></label>
+                                        <label class="chk-label checkbox c3"><input type="checkbox" value="5" data-action="process"/><span class="txt">귀돌이</span></label>
+                                        <label class="chk-label checkbox c3"><input type="checkbox" value="6" data-action="process"/><span class="txt">새로운 후가공</span></label>
+                                    </div>
+                                    <div class="process-wrap">
+                                        <dl class="process" data-sid="1">
+                                            <dt>오시</dt>
+                                            <dd><label><span class="txt">추가요청사항  </span><input type="text" /></label></dd>
+                                        </dl>
+                                        <dl class="process" data-sid="2">
+                                            <dt>도무송</dt>
+                                            <dd><label><span class="txt">추가요청사항  </span><input type="text" /></label></dd>
+                                        </dl>
+                                        <dl class="process" data-sid="3">
+                                            <dt>넘버링</dt>
+                                            <dd><label><span class="txt">추가요청사항  </span><input type="text" /></label></dd>
+                                        </dl>
+                                        <dl class="process" data-sid="4">
+                                            <dt>미싱</dt>
+                                            <dd><label><span class="txt">추가요청사항  </span><input type="text" /></label></dd>
+                                        </dl>
+                                        <dl class="process" data-sid="5">
+                                            <dt>귀돌이</dt>
+                                            <dd><label><span class="txt">추가요청사항  </span><input type="text" /></label></dd>
+                                        </dl>
+                                        <dl class="process" data-sid="6">
+                                            <dt>새로운 후가공</dt>
+                                            <dd><label><span class="txt">추가요청사항  </span><input type="text" /></label></dd>
+                                        </dl>
+                                    </div>
+                                </dd>
+                            </dl>
+
+                            <dl class="form-dl">
+                                <dt><span class="label">수량</span></dt>
+                                <dd>
+                                    <div class="cnt-box">
+                                        <a href="javascript:void(0)" class="btn-item b1" data-action="cntMinus">-</a>
+                                        <input type="text" data-selector="cnt">
+                                        <a href="javascript:void(0)" class="btn-item b2" data-action="cntPlus">+</a>
+                                    </div>
+                                    <span class="bar">장</span>
+                                    <span class="bar b2">X</span>
+                                    <select>
+                                        <option>1종</option>
+                                    </select>
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="sec-file">
+                    <div class="box">
+                        <header class="sec-header">
+                            <h3 class="sec-tit">첨부파일</h3>
+                        </header>
+                        <dl class="file-wrap">
+                            <dt><span class="label">필요한 디자인파일을 업로드 할 수 있습니다</span></dt>
+                            <dd>
+                                <label class="file-label">
+                                    <p class="dec">여기를 눌러 파일 업로드 하기</p>
+                                    <input type="file" />
+                                </label>
+                            </dd>
+                        </dl>
+                    </div>
+                </section>
+
+                <section class="sec-info">
+                    <div class="box">
+                        <header class="sec-header">
+                            <h3 class="sec-tit">주문상품 정보</h3>
+                        </header>
+                        <div class="tbl-wrap after">
+                            <table class="tbl">
+                                <colgroup>
+                                    <col style="width:240px;" />
+                                    <col />
+                                    <col style="width:100px;" />
+                                    <col style="width:135px;" />
+                                </colgroup>
+                                <thead>
+                                <tr>
+                                    <th><strong class="tit">사이즈</strong></th>
+                                    <th><strong class="tit">재질 / 후가공</strong></th>
+                                    <th><strong class="tit">면수(페이지)</strong></th>
+                                    <th><strong class="tit">수량</strong></th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td><p class="dec">명함사이즈:90x50mm</p></td>
+                                    <td>
+                                        <p class="dec">누브지</p>
+                                        <p class="dec">금박, 모서리가공</p>
+                                    </td>
+                                    <td><p class="dec">단면</p></td>
+                                    <td><p class="dec">200장 * 2종</p></td>
+                                </tr>
+                                </tbody>
+                            </table>
+
+                            <table class="tbl t2">
+                                <colgroup>
+                                    <col style="width:90px;" />
+                                    <col style="width:150px;" />
+                                    <col />
+                                </colgroup>
+                                <tbody>
+                                <tr>
+                                    <td></td>
+                                    <td><p class="dec right">제작비 84,000원</p></td>
+                                    <td><p class="dec right">부가세 84,000원</p></td>
+                                </tr>
+                                <tr>
+                                    <th>주문금액</th>
+                                    <td colspan="2"><p class="tot">92,400 <small>원</small></p></td>
+                                </tr>
+                                <tr>
+                                    <th>결제선택</th>
+                                    <td colspan="2">
+                                        <label class="chk-label radio c3"><input type="radio" /><span class="txt">지점</span></label>
+                                        <label class="chk-label radio c3"><input type="radio" /><span class="txt">본사</span></label>
+                                        <input type="text" />
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="sec-option">
+                    <div class="box">
+                        <header class="sec-header">
+                            <h3 class="sec-tit">주문선택옵션</h3>
+                        </header>
+                        <div class="form-wrap">
+                            <div class="after">
+                                <label class="chk-label checkbox c3"><input type="checkbox" /><span class="txt">시안 확인 안함 (선택 할 경우 디자인 작업 후 시안 요청 없이 바로 인쇄제작에 들어갑니다.)</span></label>
+                                <label class="chk-label checkbox c3"><input type="checkbox" /><span class="txt">디자인만 요청 (선택할 경우 제작사양을 선택했더라도 시안확정 하면 인쇄제작 없이 완료 처리됩니다.)</span></label>
+                            </div>
+                        </div>
+                        <dl class="form-dl">
+                            <dt>주문 시 참고사항 (주문에 참고 할 코멘트를 남길 수 있습니다.)</dt>
+                            <dd>
+                                <textarea></textarea>
+                            </dd>
+                        </dl>
+                    </div>
+                </section>
+
+                <div class="btt-btn">
+                    <a href="javascript:void(0)" class="btn-renew c4">장바구니담기</a>
+                    <a href="javascript:void(0)" class="btn-renew c2">바로주문하기</a>
+                    <a href="" class="btn-renew">닫기</a>
+                </div>
+            </div>
+        </div><!--content-->
+    </div><!--container-->
+
+
+
+</div>
+<script>
+    $(function(){
+        bind();
+    })
+
+    var bind = function(){
+		$("[data-action=process]").unbind("change").on("change", function(){
+			var sid = $(this).val();
+			if($(this).prop("checked")) {
+				$(".process[data-sid="+ sid +"]").addClass("_active");
+            } else {
+				$(".process[data-sid="+ sid +"]").removeClass("_active");
+            }
+
+
+			$cnt.val(parseInt(cnt)+1);
+		})
+
+    	$("[data-action=cntPlus]").unbind("click").on("click", function(){
+			var $cnt = $("[data-selector=cnt]"),
+				cnt = $cnt.val() ? $cnt.val() : "0";
+
+			$cnt.val(parseInt(cnt)+1);
+		})
+		$("[data-action=cntMinus]").unbind("click").on("click", function(){
+			var $cnt = $("[data-selector=cnt]"),
+				cnt = $cnt.val() ? $cnt.val() : "0",
+				recnt = cnt - 1 < 0 ? "0" : cnt - 1;
+
+			$cnt.val(recnt);
+		})
+    }
+</script>
+</body>
+</html>
